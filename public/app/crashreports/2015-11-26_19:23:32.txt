@@ -1,0 +1,134 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1250)
+	at android.app.Activity.performStart(Activity.java:6538)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3082)
+	... 10 more
+java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1250)
+	at android.app.Activity.performStart(Activity.java:6538)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3082)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+
+PHONE_MODEL = SM-G9208
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = --------- beginning of main
+[ 11-26 19:23:27.691 11418:11559 W/System.err ]
+remove failed: ENOENT (No such file or directory) : /data/data/com.dog.superdoglife/files/weibo_sdk_aid0
+
+--------- beginning of system
+[ 11-26 19:23:27.691 11418:11418 E/ActivityThread ]
+Failed to find provider info for com.sina.weibo.sdkProvider
+
+[ 11-26 19:23:27.701 11418:11418 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-26 19:23:27.701 11418:11560 E/ACRA     ]
+ACRA caught a UnsatisfiedLinkError for com.dog.superdoglife
+java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+
+[ 11-26 19:23:27.741 11418:11418 W/MtaSDK   ]
+[main(1): null:-1] - MTA SDK AutoExceptionCaught is disable
+
+[ 11-26 19:23:27.861 11418:11569 E/MtaSDK   ]
+[StatDispatcher(3518): null:-1] - Server response error code:404, error:{"ret":-1, "msg":"invalid appkey"}
+
+[ 11-26 19:23:29.781 11418:11578 E/ACRA     ]
+com.dog.superdoglife fatal error : dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+
+[ 11-26 19:23:29.951 11583:11583 E/SELinux  ]
+[DEBUG] get_category: variable seinfo: default sensitivity: NULL, cateogry: NULL
+
+
+[ 11-26 19:23:30.111 11583:11583 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1250)
+	at android.app.Activity.performStart(Activity.java:6538)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3082)
+	... 10 more
+
+
+

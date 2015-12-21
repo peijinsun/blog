@@ -1,0 +1,116 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:989)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+PHONE_MODEL = M355
+ANDROID_VERSION = 5.0.1
+APP_VERSION_NAME = 1.0
+LOGCAT = 
+[ 11-20 10:17:25.391 22244:22593 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.396 22244:22608 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.398 22244:22608 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.650 22244:22601 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.651 22244:22601 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.691 22244:22618 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.693 22244:22618 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.697 22244:22602 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.700 22244:22602 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.740 22244:22589 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.742 22244:22589 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.791 22244:22628 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.796 22244:22628 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.798 22244:22626 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.804 22244:22626 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.895 22244:22667 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:25.897 22244:22667 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.092 22244:22546 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.094 22244:22546 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.144 22244:22547 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.150 22244:22547 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.153 22244:22552 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.157 22244:22552 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.903 22244:22560 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.907 22244:22560 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.909 22244:22537 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+[ 11-20 10:17:26.911 22244:22537 W/ContextImpl ]
+Failed to ensure directory: /storage/sd/Android/data/com.dog.superdoglife/cache
+
+--------- beginning of system
+[ 11-20 10:17:49.574 22244:22244 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-20 10:17:49.606 22244:23313 E/ACRA     ]
+ACRA caught a UnsatisfiedLinkError for com.dog.superdoglife
+java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:989)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+
+

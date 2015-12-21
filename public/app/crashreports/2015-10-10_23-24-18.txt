@@ -1,0 +1,42 @@
+CUSTOM_DATA = 
+LOGCAT = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2281)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2331)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:143)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1244)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5291)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:665)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:120)
+	at android.app.Activity.performCreate(Activity.java:5304)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1090)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2245)
+	... 11 more
+java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:120)
+	at android.app.Activity.performCreate(Activity.java:5304)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1090)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2245)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2331)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:143)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1244)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5291)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:665)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = CHE-TL00H
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.2
+APP_VERSION_CODE = 1

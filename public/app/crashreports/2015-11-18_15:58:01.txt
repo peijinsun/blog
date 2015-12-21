@@ -1,0 +1,117 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/system
+--------- beginning of /dev/log/main
+[ 11-18 15:58:01.445   356:0x164 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41c099a8)
+
+[ 11-18 15:58:01.445   356:0x164 W/dalvikvm ]
+threadid=1: uncaught exception occurred
+
+[ 11-18 15:58:01.445   356:0x164 W/System.err ]
+android.content.ActivityNotFoundException: Unable to find explicit activity class {com.dog.superdoglife/com.dog.superdoglife.WebActivity}; have you declared this activity in your AndroidManifest.xml?
+
+[ 11-18 15:58:01.450   356:0x164 W/System.err ]
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1689)
+
+[ 11-18 15:58:01.450   356:0x164 W/System.err ]
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1488)
+
+[ 11-18 15:58:01.450   356:0x164 W/System.err ]
+	at android.app.Activity.startActivityForResult(Activity.java:3435)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.app.Activity.startActivityForResult(Activity.java:3376)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.app.Activity.startActivity(Activity.java:3631)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.app.Activity.startActivity(Activity.java:3599)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at com.dog.o2o.platform.PlatformDetailsActivity$4.onClick(PlatformDetailsActivity.java:186)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.view.View.performClick(View.java:4222)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.view.View$PerformClick.run(View.java:17652)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.os.Handler.handleCallback(Handler.java:800)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.os.Looper.loop(Looper.java:194)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at java.lang.reflect.Method.invoke(Method.java:525)
+
+[ 11-18 15:58:01.451   356:0x164 W/System.err ]
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+
+[ 11-18 15:58:01.452   356:0x164 W/System.err ]
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+
+[ 11-18 15:58:01.452   356:0x164 W/System.err ]
+	at dalvik.system.NativeStart.main(Native Method)
+
+[ 11-18 15:58:01.452   356:0x164 W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 11-18 15:58:01.453   356:0x164 E/ACRA     ]
+ACRA caught a ActivityNotFoundException for com.dog.superdoglife
+android.content.ActivityNotFoundException: Unable to find explicit activity class {com.dog.superdoglife/com.dog.superdoglife.WebActivity}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1689)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1488)
+	at android.app.Activity.startActivityForResult(Activity.java:3435)
+	at android.app.Activity.startActivityForResult(Activity.java:3376)
+	at android.app.Activity.startActivity(Activity.java:3631)
+	at android.app.Activity.startActivity(Activity.java:3599)
+	at com.dog.o2o.platform.PlatformDetailsActivity$4.onClick(PlatformDetailsActivity.java:186)
+	at android.view.View.performClick(View.java:4222)
+	at android.view.View$PerformClick.run(View.java:17652)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+STACK_TRACE = android.content.ActivityNotFoundException: Unable to find explicit activity class {com.dog.superdoglife/com.dog.superdoglife.WebActivity}; have you declared this activity in your AndroidManifest.xml?
+	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1689)
+	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1488)
+	at android.app.Activity.startActivityForResult(Activity.java:3435)
+	at android.app.Activity.startActivityForResult(Activity.java:3376)
+	at android.app.Activity.startActivity(Activity.java:3631)
+	at android.app.Activity.startActivity(Activity.java:3599)
+	at com.dog.o2o.platform.PlatformDetailsActivity$4.onClick(PlatformDetailsActivity.java:186)
+	at android.view.View.performClick(View.java:4222)
+	at android.view.View$PerformClick.run(View.java:17652)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

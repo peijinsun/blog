@@ -1,0 +1,75 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/system
+--------- beginning of /dev/log/main
+[ 11-23 17:09:25.123 11046:0x2c35 W/dalvikvm ]
+Exception Ljava/lang/UnsatisfiedLinkError; thrown while initializing Lcom/sina/weibo/sdk/net/HttpManager;
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/dalvikvm ]
+threadid=13: thread exiting with uncaught exception (group=0x41c099a8)
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/dalvikvm ]
+threadid=13: uncaught exception occurred
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.dog.superdoglife-2, /vendor/lib, /system/lib]]]: findLibrary returned null
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+	at java.lang.System.loadLibrary(System.java:514)
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+
+[ 11-23 17:09:25.123 11046:0x2c35 W/System.err ]
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+
+[ 11-23 17:09:25.124 11046:0x2c35 W/System.err ]
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+
+[ 11-23 17:09:25.124 11046:0x2c35 W/System.err ]
+	at java.lang.Thread.run(Thread.java:838)
+
+[ 11-23 17:09:25.124 11046:0x2c35 W/dalvikvm ]
+threadid=13: calling UncaughtExceptionHandler
+
+[ 11-23 17:09:25.125 11046:0x2c35 E/ACRA     ]
+ACRA caught a UnsatisfiedLinkError for com.dog.superdoglife
+java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.dog.superdoglife-2, /vendor/lib, /system/lib]]]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:514)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:838)
+
+
+[ 11-23 17:09:25.231 11046:0x2b26 E/SQLiteLog ]
+(10) Failed to do file read, got: 0, amt: 100, last Errno: 2
+
+
+
+
+STACK_TRACE = java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.dog.superdoglife-2, /vendor/lib, /system/lib]]]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:514)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:838)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

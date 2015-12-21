@@ -1,0 +1,60 @@
+CUSTOM_DATA = 
+LOGCAT = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2281)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2331)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:143)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1244)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5291)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:665)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.view.View.onRestoreInstanceState(View.java:12861)
+	at android.view.View.dispatchRestoreInstanceState(View.java:12837)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2639)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.View.restoreHierarchyState(View.java:12815)
+	at com.android.internal.policy.impl.PhoneWindow.restoreHierarchyState(PhoneWindow.java:1801)
+	at android.app.Activity.onRestoreInstanceState(Activity.java:973)
+	at android.app.Activity.performRestoreInstanceState(Activity.java:944)
+	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1141)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2259)
+	... 11 more
+java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.view.View.onRestoreInstanceState(View.java:12861)
+	at android.view.View.dispatchRestoreInstanceState(View.java:12837)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2639)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2647)
+	at android.view.View.restoreHierarchyState(View.java:12815)
+	at com.android.internal.policy.impl.PhoneWindow.restoreHierarchyState(PhoneWindow.java:1801)
+	at android.app.Activity.onRestoreInstanceState(Activity.java:973)
+	at android.app.Activity.performRestoreInstanceState(Activity.java:944)
+	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1141)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2259)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2331)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:143)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1244)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5291)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:665)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = CHE-TL00H
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.2
+APP_VERSION_CODE = 1

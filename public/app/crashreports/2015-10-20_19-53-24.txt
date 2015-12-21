@@ -1,0 +1,142 @@
+CUSTOM_DATA = 
+LOGCAT = [ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/201510030014-2.jpg: open failed: ENOENT (No such file or directory)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:409)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:393)
+
+[ 10-20 19:52:14.217  3915: 4290 W/System.err ]
+	... 3 more
+
+[ 10-20 19:52:26.137  3915: 4364 W/chromium ]
+[WARNING:proxy_service.cc(890)] PAC support disabled because there is no system implementation
+
+
+[ 10-20 19:52:26.327  3915: 3915 W/AwContents ]
+nativeOnDraw failed; clearing to background color.
+
+[ 10-20 19:52:26.347  3915: 3915 W/AwContents ]
+nativeOnDraw failed; clearing to background color.
+
+[ 10-20 19:52:57.817  3915: 3915 W/ManagedEGLContext ]
+doTerminate failed: EGL count is 2 but managed count is 1
+
+[ 10-20 19:52:58.287  3915: 3915 W/IInputConnectionWrapper ]
+showStatusIcon on inactive InputConnection
+
+[ 10-20 19:52:59.407  3915: 3915 E/WhetstoneSDK-JNI ]
+on Load native Whetstone
+
+[ 10-20 19:52:59.417  3915: 3915 W/ManagedEGLContext ]
+doTerminate failed: EGL count is 2 but managed count is 1
+
+[ 10-20 19:53:20.587  5517: 5517 W/ActivityThread ]
+Application com.dog.superdoglife can be debugged on port 8100...
+
+[ 10-20 19:53:20.727  5517: 5539 W/chromium ]
+[WARNING:proxy_service.cc(890)] PAC support disabled because there is no system implementation
+
+
+[ 10-20 19:53:20.817  5517: 5517 W/AwContents ]
+nativeOnDraw failed; clearing to background color.
+
+[ 10-20 19:53:20.857  5517: 5517 W/AwContents ]
+nativeOnDraw failed; clearing to background color.
+
+[ 10-20 19:53:24.187  5517: 5517 W/UnimplementedWebViewApi ]
+Unimplemented WebView method onKeyDown called from: android.webkit.WebView.onKeyDown(WebView.java:2184)
+
+[ 10-20 19:53:24.327  5517: 5517 E/ChoiceDetailActivity ]
+Invalid index 0, size is 0
+
+[ 10-20 19:53:24.367  5517: 5517 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41b51d58)
+
+[ 10-20 19:53:24.377  5517: 5517 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+
+
+[ 10-20 19:53:24.407  5517: 5693 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

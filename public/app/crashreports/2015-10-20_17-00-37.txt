@@ -1,0 +1,269 @@
+CUSTOM_DATA = 
+LOGCAT = [ 10-20 17:00:38.921 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+
+[ 10-20 17:00:38.921 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x94338(Native Method)
+
+[ 10-20 17:00:38.921 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x27460(Native Method)
+
+[ 10-20 17:00:38.921 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+
+[ 10-20 17:00:38.922 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+
+[ 10-20 17:00:38.922 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x94338(Native Method)
+
+[ 10-20 17:00:38.922 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x27460(Native Method)
+
+[ 10-20 17:00:38.922 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+
+[ 10-20 17:00:38.922 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x84e24(dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list):0x190:0)
+
+[ 10-20 17:00:38.923 21013:0x5215 W/System.err ]
+	at system.lib.libdvm_so.0x587b8(Native Method)
+
+[ 10-20 17:00:38.923 21013:0x5215 W/System.err ]
+	at system.lib.libandroid_runtime_so.0x502d9(Native Method)
+
+[ 10-20 17:00:38.923 21013:0x5215 W/System.err ]
+	at system.lib.libandroid_runtime_so.0x5114d(android::AndroidRuntime::start(char const*, char const*):0x190:0)
+
+[ 10-20 17:00:38.923 21013:0x5215 W/System.err ]
+	at system.bin.app_process.0xdb7(Native Method)
+
+[ 10-20 17:00:38.924 21013:0x5215 W/System.err ]
+	at system.lib.libc_so.0x1c3d4(__libc_init:0x40:0)
+
+[ 10-20 17:00:38.924 21013:0x5215 W/System.err ]
+	at system.bin.app_process.0xae8(Native Method)
+
+[ 10-20 17:00:38.924 21013:0x5215 W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 10-20 17:00:38.930 21013:0x5215 E/ACRA     ]
+ACRA caught a IllegalStateException for com.example.testtapcmd
+java.lang.IllegalStateException: Could not execute method of the activity
+	at android.view.View$1.onClick(View.java:3617)
+	at android.view.View.performClick(View.java:4222)
+	at android.view.View$PerformClick.run(View.java:17652)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at android.view.View$1.onClick(View.java:3612)
+	... 11 more
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at com.example.testtapcmd.MainActivity.sendevent(Native Method)
+	at com.example.testtapcmd.MainActivity.onsendevent(MainActivity.java:74)
+	... 14 more
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at system.lib.libdvm_so.0x5244c(dvmAbort:0xb0:0)
+	at system.lib.libdvm_so.0x3b088(Native Method)
+	at system.lib.libdvm_so.0x3f118(Native Method)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x1465(func(_JNIEnv*, int, _jobjectArray*):0x20:0)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x14a1(Java_com_example_testtapcmd_MainActivity_sendevent:0x2c:0)
+	at system.lib.libdvm_so.0x1e090(dvmPlatformInvoke:0x70:0)
+	at system.lib.libdvm_so.0x62e18(dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*):0x238:0)
+	at system.lib.libdvm_so.0x67244(dvmResolveNativeMethod(unsigned int const*, JValue*, Method const*, Thread*):0x13c:0)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x84e24(dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list):0x190:0)
+	at system.lib.libdvm_so.0x587b8(Native Method)
+	at system.lib.libandroid_runtime_so.0x502d9(Native Method)
+	at system.lib.libandroid_runtime_so.0x5114d(android::AndroidRuntime::start(char const*, char const*):0x190:0)
+	at system.bin.app_process.0xdb7(Native Method)
+	at system.lib.libc_so.0x1c3d4(__libc_init:0x40:0)
+	at system.bin.app_process.0xae8(Native Method)
+
+
+
+STACK_TRACE = java.lang.IllegalStateException: Could not execute method of the activity
+	at android.view.View$1.onClick(View.java:3617)
+	at android.view.View.performClick(View.java:4222)
+	at android.view.View$PerformClick.run(View.java:17652)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at android.view.View$1.onClick(View.java:3612)
+	... 11 more
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at com.example.testtapcmd.MainActivity.sendevent(Native Method)
+	at com.example.testtapcmd.MainActivity.onsendevent(MainActivity.java:74)
+	... 14 more
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at system.lib.libdvm_so.0x5244c(dvmAbort:0xb0:0)
+	at system.lib.libdvm_so.0x3b088(Native Method)
+	at system.lib.libdvm_so.0x3f118(Native Method)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x1465(func(_JNIEnv*, int, _jobjectArray*):0x20:0)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x14a1(Java_com_example_testtapcmd_MainActivity_sendevent:0x2c:0)
+	at system.lib.libdvm_so.0x1e090(dvmPlatformInvoke:0x70:0)
+	at system.lib.libdvm_so.0x62e18(dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*):0x238:0)
+	at system.lib.libdvm_so.0x67244(dvmResolveNativeMethod(unsigned int const*, JValue*, Method const*, Thread*):0x13c:0)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x84e24(dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list):0x190:0)
+	at system.lib.libdvm_so.0x587b8(Native Method)
+	at system.lib.libandroid_runtime_so.0x502d9(Native Method)
+	at system.lib.libandroid_runtime_so.0x5114d(android::AndroidRuntime::start(char const*, char const*):0x190:0)
+	at system.bin.app_process.0xdb7(Native Method)
+	at system.lib.libc_so.0x1c3d4(__libc_init:0x40:0)
+	at system.bin.app_process.0xae8(Native Method)
+java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at android.view.View$1.onClick(View.java:3612)
+	at android.view.View.performClick(View.java:4222)
+	at android.view.View$PerformClick.run(View.java:17652)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at com.example.testtapcmd.MainActivity.sendevent(Native Method)
+	at com.example.testtapcmd.MainActivity.onsendevent(MainActivity.java:74)
+	... 14 more
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at system.lib.libdvm_so.0x5244c(dvmAbort:0xb0:0)
+	at system.lib.libdvm_so.0x3b088(Native Method)
+	at system.lib.libdvm_so.0x3f118(Native Method)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x1465(func(_JNIEnv*, int, _jobjectArray*):0x20:0)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x14a1(Java_com_example_testtapcmd_MainActivity_sendevent:0x2c:0)
+	at system.lib.libdvm_so.0x1e090(dvmPlatformInvoke:0x70:0)
+	at system.lib.libdvm_so.0x62e18(dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*):0x238:0)
+	at system.lib.libdvm_so.0x67244(dvmResolveNativeMethod(unsigned int const*, JValue*, Method const*, Thread*):0x13c:0)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x84e24(dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list):0x190:0)
+	at system.lib.libdvm_so.0x587b8(Native Method)
+	at system.lib.libandroid_runtime_so.0x502d9(Native Method)
+	at system.lib.libandroid_runtime_so.0x5114d(android::AndroidRuntime::start(char const*, char const*):0x190:0)
+	at system.bin.app_process.0xdb7(Native Method)
+	at system.lib.libc_so.0x1c3d4(__libc_init:0x40:0)
+	at system.bin.app_process.0xae8(Native Method)
+java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at com.example.testtapcmd.MainActivity.sendevent(Native Method)
+	at com.example.testtapcmd.MainActivity.onsendevent(MainActivity.java:74)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at android.view.View$1.onClick(View.java:3612)
+	at android.view.View.performClick(View.java:4222)
+	at android.view.View$PerformClick.run(View.java:17652)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at system.lib.libdvm_so.0x5244c(dvmAbort:0xb0:0)
+	at system.lib.libdvm_so.0x3b088(Native Method)
+	at system.lib.libdvm_so.0x3f118(Native Method)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x1465(func(_JNIEnv*, int, _jobjectArray*):0x20:0)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x14a1(Java_com_example_testtapcmd_MainActivity_sendevent:0x2c:0)
+	at system.lib.libdvm_so.0x1e090(dvmPlatformInvoke:0x70:0)
+	at system.lib.libdvm_so.0x62e18(dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*):0x238:0)
+	at system.lib.libdvm_so.0x67244(dvmResolveNativeMethod(unsigned int const*, JValue*, Method const*, Thread*):0x13c:0)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x84e24(dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list):0x190:0)
+	at system.lib.libdvm_so.0x587b8(Native Method)
+	at system.lib.libandroid_runtime_so.0x502d9(Native Method)
+	at system.lib.libandroid_runtime_so.0x5114d(android::AndroidRuntime::start(char const*, char const*):0x190:0)
+	at system.bin.app_process.0xdb7(Native Method)
+	at system.lib.libc_so.0x1c3d4(__libc_init:0x40:0)
+	at system.bin.app_process.0xae8(Native Method)
+java.lang.Error: signal 11 (Address not mapped to object) at address 0xdeadd00d [at libdvm.so:0x5244c (dvmAbort+0xb0)]
+	at system.lib.libdvm_so.0x5244c(dvmAbort:0xb0:0)
+	at system.lib.libdvm_so.0x3b088(Native Method)
+	at system.lib.libdvm_so.0x3f118(Native Method)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x1465(func(_JNIEnv*, int, _jobjectArray*):0x20:0)
+	at data.app_lib.com_example_testtapcmd_2.libsendevent_so.0x14a1(Java_com_example_testtapcmd_MainActivity_sendevent:0x2c:0)
+	at system.lib.libdvm_so.0x1e090(dvmPlatformInvoke:0x70:0)
+	at system.lib.libdvm_so.0x62e18(dvmCallJNIMethod(unsigned int const*, JValue*, Method const*, Thread*):0x238:0)
+	at system.lib.libdvm_so.0x67244(dvmResolveNativeMethod(unsigned int const*, JValue*, Method const*, Thread*):0x13c:0)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x851d4(dvmInvokeMethod(Object*, Method const*, ArrayObject*, ArrayObject*, ClassObject*, bool):0x310:0)
+	at system.lib.libdvm_so.0x94338(Native Method)
+	at system.lib.libdvm_so.0x27460(Native Method)
+	at system.lib.libdvm_so.0x2b620(dvmInterpret(Thread*, Method const*, JValue*):0xb4:0)
+	at system.lib.libdvm_so.0x84e24(dvmCallMethodV(Thread*, Method const*, Object*, bool, JValue*, std::__va_list):0x190:0)
+	at system.lib.libdvm_so.0x587b8(Native Method)
+	at system.lib.libandroid_runtime_so.0x502d9(Native Method)
+	at system.lib.libandroid_runtime_so.0x5114d(android::AndroidRuntime::start(char const*, char const*):0x190:0)
+	at system.bin.app_process.0xdb7(Native Method)
+	at system.lib.libc_so.0x1c3d4(__libc_init:0x40:0)
+	at system.bin.app_process.0xae8(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

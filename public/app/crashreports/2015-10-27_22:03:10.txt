@@ -1,0 +1,140 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2303)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	... 10 more
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+
+PHONE_MODEL = MI 2
+ANDROID_VERSION = 5.0.2
+APP_VERSION_NAME = 1.0
+LOGCAT = 	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	... 10 more
+
+
+[ 10-27 22:00:15.586   706: 2176 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+[ 10-27 22:00:17.638   706: 2200 E/ACRA     ]
+com.dog.superdoglife fatal error : Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2303)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	... 10 more
+
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+java.io.FileNotFoundException: /storage/sdcard0/Android/data/com.dog.superdoglife/cache/logo_405.png: open failed: ENOENT (No such file or directory)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 10-27 22:01:59.777  2230: 2641 W/System.err ]
+	... 3 more
+
+[ 10-27 22:03:02.569  2230: 3092 E/UserInfoLoader ]
+result:{"id":"00000100000","username":null,"phone":null,"password":null,"point":"0","qquid":"7DA6B18DA617D42A17809AD9B404C18B","weixinuid":null,"weibouid":null,"signin":"0000-00-00"}???
+
+[ 10-27 22:03:15.691  2230: 2230 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2303)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.dog.datastruct.Choice.getDesc()' on a null object reference
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	... 10 more
+
+
+[ 10-27 22:03:15.711  2230: 3210 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+

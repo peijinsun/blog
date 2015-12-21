@@ -1,0 +1,142 @@
+CUSTOM_DATA = 
+LOGCAT = Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-09 11:53:12.013  1239: 1293 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-09 11:53:12.013  1239: 1293 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:332)
+
+[ 10-09 11:53:12.013  1239: 1293 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:400)
+
+[ 10-09 11:53:12.013  1239: 1293 W/System.err ]
+	... 3 more
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003006.jpg: open failed: ENOENT (No such file or directory)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:416)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:332)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:400)
+
+[ 10-09 11:53:12.045  1239: 1294 W/System.err ]
+	... 3 more
+
+[ 10-09 11:53:12.081  1239: 1295 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003007.jpg: open failed: ENOENT (No such file or directory)
+
+[ 10-09 11:53:12.081  1239: 1295 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:416)
+
+[ 10-09 11:53:12.081  1239: 1295 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 10-09 11:53:12.081  1239: 1295 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-09 11:53:12.081  1239: 1295 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-09 11:53:12.081  1239: 1295 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-09 11:53:12.085  1239: 1295 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-09 11:53:12.085  1239: 1295 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:332)
+
+[ 10-09 11:53:12.085  1239: 1295 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:400)
+
+[ 10-09 11:53:12.085  1239: 1295 W/System.err ]
+	... 3 more
+
+[ 10-09 11:53:12.813  1239: 1239 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0xa61d7908)
+
+[ 10-09 11:53:12.817  1239: 1239 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2180)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2230)
+	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1234)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:5041)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:120)
+	at android.app.Activity.performCreate(Activity.java:5242)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1080)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2144)
+	... 11 more
+
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2180)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2230)
+	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1234)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:5041)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:120)
+	at android.app.Activity.performCreate(Activity.java:5242)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1080)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2144)
+	... 11 more
+java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:120)
+	at android.app.Activity.performCreate(Activity.java:5242)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1080)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2144)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2230)
+	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1234)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:5041)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = virtual machine
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

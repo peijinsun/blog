@@ -1,0 +1,158 @@
+CUSTOM_DATA = 
+LOGCAT = [ 11-24 16:44:19.681 18719:19014 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003021.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:409)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at com.dog.common.tools.CommonTools.getBitmap(CommonTools.java:141)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at com.dog.common.tools.AsyncImageLoader$2.run(AsyncImageLoader.java:44)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:393)
+
+[ 11-24 16:44:19.681 18719:19014 W/System.err ]
+	... 3 more
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003015.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:409)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+	at com.dog.common.tools.CommonTools.getBitmap(CommonTools.java:141)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+	at com.dog.common.tools.AsyncImageLoader$2.run(AsyncImageLoader.java:44)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-24 16:44:19.841 18719:19028 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+
+[ 11-24 16:44:19.851 18719:19028 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:393)
+
+[ 11-24 16:44:19.851 18719:19028 W/System.err ]
+	... 3 more
+
+[ 11-24 16:45:12.451 19720:19720 W/ActivityThread ]
+Application com.dog.superdoglife can be debugged on port 8100...
+
+[ 11-24 16:45:12.761 19720:19720 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41709d58)
+
+[ 11-24 16:45:12.771 19720:19720 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+	at android.app.Activity.performStart(Activity.java:5259)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2174)
+	... 11 more
+
+
+[ 11-24 16:45:12.771 19720:19742 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+	at android.app.Activity.performStart(Activity.java:5259)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2174)
+	... 11 more
+java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+	at android.app.Activity.performStart(Activity.java:5259)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2174)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

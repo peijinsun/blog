@@ -1,0 +1,116 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+PHONE_MODEL = Mi-4c
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = 
+[ 11-19 21:50:19.259 31185:31282 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-19 21:50:19.259 31185:31282 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-19 21:50:19.259 31185:31282 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-19 21:50:19.259 31185:31282 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-19 21:50:19.259 31185:31282 W/System.err ]
+	... 3 more
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003004.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-19 21:50:19.259 31185:31283 W/System.err ]
+	... 3 more
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003001.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-19 21:50:19.269 31185:31284 W/System.err ]
+	... 3 more
+
+--------- beginning of system
+[ 11-19 21:50:26.689 31185:31185 E/ActivityThread ]
+Failed to find provider info for com.sina.weibo.sdkProvider
+
+[ 11-19 21:50:26.709 31185:31185 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-19 21:50:26.719 31185:31357 E/ACRA     ]
+ACRA caught a UnsatisfiedLinkError for com.dog.superdoglife
+java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+
+[ 11-19 21:50:26.719 31185:31362 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+

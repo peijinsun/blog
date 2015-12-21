@@ -1,0 +1,82 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+[ 11-18 15:55:33.402 32149:0x7d95 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41c099a8)
+
+[ 11-18 15:55:33.402 32149:0x7d95 W/dalvikvm ]
+threadid=1: uncaught exception occurred
+
+[ 11-18 15:55:33.402 32149:0x7d95 W/System.err ]
+java.util.ConcurrentModificationException
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:569)
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at com.dog.datastruct.B2CCategory.updategoodsList(B2CCategory.java:35)
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at com.dog.b2c.choice.ChoiceInfoLoader$1.handleMessage(ChoiceInfoLoader.java:50)
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at android.os.Looper.loop(Looper.java:194)
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+
+[ 11-18 15:55:33.406 32149:0x7d95 W/System.err ]
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+[ 11-18 15:55:33.407 32149:0x7d95 W/System.err ]
+	at java.lang.reflect.Method.invoke(Method.java:525)
+
+[ 11-18 15:55:33.407 32149:0x7d95 W/System.err ]
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+
+[ 11-18 15:55:33.407 32149:0x7d95 W/System.err ]
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+
+[ 11-18 15:55:33.408 32149:0x7d95 W/System.err ]
+	at dalvik.system.NativeStart.main(Native Method)
+
+[ 11-18 15:55:33.409 32149:0x7d95 W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 11-18 15:55:33.410 32149:0x7d95 E/ACRA     ]
+ACRA caught a ConcurrentModificationException for com.dog.superdoglife
+java.util.ConcurrentModificationException
+	at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:569)
+	at com.dog.datastruct.B2CCategory.updategoodsList(B2CCategory.java:35)
+	at com.dog.b2c.choice.ChoiceInfoLoader$1.handleMessage(ChoiceInfoLoader.java:50)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+STACK_TRACE = java.util.ConcurrentModificationException
+	at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:569)
+	at com.dog.datastruct.B2CCategory.updategoodsList(B2CCategory.java:35)
+	at com.dog.b2c.choice.ChoiceInfoLoader$1.handleMessage(ChoiceInfoLoader.java:50)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

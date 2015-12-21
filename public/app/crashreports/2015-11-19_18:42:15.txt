@@ -1,0 +1,100 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+[ 11-19 18:42:15.240 26530:26530 W/ActivityThread ]
+Application com.dog.superdoglife can be debugged on port 8100...
+
+[ 11-19 18:42:15.560 26530:26530 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41709d58)
+
+[ 11-19 18:42:15.560 26530:26530 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IndexOutOfBoundsException: Invalid index 5, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 5, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+	at android.app.Activity.performStart(Activity.java:5259)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2174)
+	... 11 more
+
+
+[ 11-19 18:42:15.570 26530:26553 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IndexOutOfBoundsException: Invalid index 5, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 5, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+	at android.app.Activity.performStart(Activity.java:5259)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2174)
+	... 11 more
+java.lang.IndexOutOfBoundsException: Invalid index 5, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ItemFragment.onCreateView(ItemFragment.java:28)
+	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1789)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+	at android.app.Activity.performStart(Activity.java:5259)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2174)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

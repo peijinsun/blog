@@ -1,0 +1,102 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+PHONE_MODEL = SM-G9208
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = --------- beginning of main
+--------- beginning of system
+[ 11-25 19:24:10.421 31416:31416 W/art      ]
+Attempt to remove local handle scope entry from IRT, ignoring
+
+[ 11-25 19:24:10.431 31416:31416 W/AwContents ]
+onDetachedFromWindow called when already detached. Ignoring
+
+[ 11-25 19:24:10.741 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:10.911 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:11.021 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:11.281 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:13.401 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:13.591 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:13.851 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(1953)] [.GpuRasterization]GL ERROR :GL_INVALID_OPERATION : GLES2DecoderImpl::DoWillUseTexImageIfNeeded: <- error from previous GL command
+
+
+[ 11-25 19:24:13.971 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(1953)] [.GpuRasterization]GL ERROR :GL_INVALID_OPERATION : GLES2DecoderImpl::DoWillUseTexImageIfNeeded: <- error from previous GL command
+
+
+[ 11-25 19:24:15.741 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(1953)] [.GpuRasterization]GL ERROR :GL_INVALID_OPERATION : GLES2DecoderImpl::DoWillUseTexImageIfNeeded: <- error from previous GL command
+
+
+[ 11-25 19:24:16.731 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(11539)] [GroupMarkerNotSet(crbug.com/242999)!:F82489977F000000]GL ERROR :GL_INVALID_OPERATION : glTexStorage2DEXT: <- error from previous GL command
+
+
+[ 11-25 19:24:16.831 31416:31416 W/BindingManager ]
+Cannot call determinedVisibility() - never saw a connection for the pid: 31416
+
+[ 11-25 19:24:16.991 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(1953)] [.GpuRasterization]GL ERROR :GL_INVALID_OPERATION : GLES2DecoderImpl::DoWillUseTexImageIfNeeded: <- error from previous GL command
+
+
+[ 11-25 19:24:17.391 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(1953)] [.GpuRasterization]GL ERROR :GL_INVALID_OPERATION : GLES2DecoderImpl::DoWillUseTexImageIfNeeded: <- error from previous GL command
+
+
+[ 11-25 19:24:19.831 31416:31738 E/chromium ]
+[ERROR:gles2_cmd_decoder.cc(1953)] [GroupMarkerNotSet(crbug.com/242999)!:F82489977F000000]GL ERROR :GL_INVALID_OPERATION : BackFramebuffer::Destroy: <- error from previous GL command
+
+
+[ 11-25 19:24:19.841 31416:31416 W/ScreenOrientationListener ]
+Removing an inexistent observer!
+
+[ 11-25 19:24:23.261 31416:31416 E/ActivityThread ]
+Failed to find provider info for com.sina.weibo.sdkProvider
+
+[ 11-25 19:24:23.271 31416:31841 W/System.err ]
+remove failed: ENOENT (No such file or directory) : /data/data/com.dog.superdoglife/files/weibo_sdk_aid0
+
+[ 11-25 19:24:23.281 31416:31416 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-25 19:24:23.301 31416:31842 E/ACRA     ]
+ACRA caught a UnsatisfiedLinkError for com.dog.superdoglife
+java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+
+[ 11-25 19:24:23.301 31416:31416 W/MtaSDK   ]
+[main(1): null:-1] - MTA SDK AutoExceptionCaught is disable
+
+

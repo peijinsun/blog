@@ -1,0 +1,44 @@
+CUSTOM_DATA = 
+LOGCAT = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2180)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2230)
+	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1234)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:5041)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+	at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5104)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1080)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2144)
+	... 12 more
+java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:151)
+	at android.app.Activity.performCreate(Activity.java:5104)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1080)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2144)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2230)
+	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1234)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:5041)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+	at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = Full Android on Emulator
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

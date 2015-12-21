@@ -1,0 +1,71 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	... 10 more
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+
+PHONE_MODEL = SM-G9208
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = --------- beginning of main
+[ 11-27 15:21:57.721  2227: 2227 E/SELinux  ]
+[DEBUG] get_category: variable seinfo: default sensitivity: NULL, cateogry: NULL
+
+
+--------- beginning of system
+[ 11-27 15:21:58.271  2227: 2343 W/OpenGLRenderer ]
+Program(eed3ac20) : invalid binary - source difference(vs(290:290)/fs(169:0)-b0000000000000001)
+
+[ 11-27 15:21:59.691  2227: 2227 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.Button.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:103)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	... 10 more
+
+
+

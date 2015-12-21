@@ -1,0 +1,136 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.IllegalStateException: ViewPager has not been bound.
+	at com.viewpagerindicator.TabPageIndicator.setCurrentItem(TabPageIndicator.java:240)
+	at com.viewpagerindicator.TabPageIndicator.onMeasure(TabPageIndicator.java:116)
+	at android.view.View.measure(View.java:18849)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5904)
+	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1435)
+	at android.widget.LinearLayout.measureVertical(LinearLayout.java:721)
+	at android.widget.LinearLayout.onMeasure(LinearLayout.java:612)
+	at android.view.View.measure(View.java:18849)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5904)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:436)
+	at android.view.View.measure(View.java:18849)
+	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2343)
+	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1380)
+	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1623)
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1265)
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6945)
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:826)
+	at android.view.Choreographer.doCallbacks(Choreographer.java:605)
+	at android.view.Choreographer.doFrame(Choreographer.java:575)
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:812)
+	at android.os.Handler.handleCallback(Handler.java:739)
+	at android.os.Handler.dispatchMessage(Handler.java:95)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+
+PHONE_MODEL = SM-G9208
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = 
+[ 11-27 16:53:38.821  2745: 3062 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-27 16:53:38.821  2745: 3062 W/System.err ]
+	... 3 more
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003021.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at com.dog.common.tools.CommonTools.getBitmap(CommonTools.java:141)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at com.dog.common.tools.AsyncImageLoader$2.run(AsyncImageLoader.java:44)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-27 16:53:38.931  2745: 3092 W/System.err ]
+	... 3 more
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003015.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at com.dog.common.tools.CommonTools.getBitmap(CommonTools.java:141)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at com.dog.common.tools.AsyncImageLoader$2.run(AsyncImageLoader.java:44)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-27 16:53:39.011  2745: 3117 W/System.err ]
+	... 3 more
+
+[ 11-27 16:53:40.581  2745: 2745 E/ACRA     ]
+ACRA caught a IllegalStateException for com.dog.superdoglife
+java.lang.IllegalStateException: ViewPager has not been bound.
+	at com.viewpagerindicator.TabPageIndicator.setCurrentItem(TabPageIndicator.java:240)
+	at com.viewpagerindicator.TabPageIndicator.onMeasure(TabPageIndicator.java:116)
+	at android.view.View.measure(View.java:18849)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5904)
+	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1435)
+	at android.widget.LinearLayout.measureVertical(LinearLayout.java:721)
+	at android.widget.LinearLayout.onMeasure(LinearLayout.java:612)
+	at android.view.View.measure(View.java:18849)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:5904)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:436)
+	at android.view.View.measure(View.java:18849)
+	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2343)
+	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1380)
+	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1623)
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1265)
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6945)
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:826)
+	at android.view.Choreographer.doCallbacks(Choreographer.java:605)
+	at android.view.Choreographer.doFrame(Choreographer.java:575)
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:812)
+	at android.os.Handler.handleCallback(Handler.java:739)
+	at android.os.Handler.dispatchMessage(Handler.java:95)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+
+
+

@@ -1,0 +1,119 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.Object[] java.util.Collection.toArray()' on a null object reference
+	at java.util.ArrayList.addAll(ArrayList.java:188)
+	at com.dog.b2c.choice.ChoiceListAdapter.refill(ChoiceListAdapter.java:184)
+	at com.dog.superdoglife.WantBuyActivity$1.notifyLoadComplete(WantBuyActivity.java:40)
+	at com.dog.userinfo.UserFavInfoLoader$1.handleMessage(UserFavInfoLoader.java:48)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+
+PHONE_MODEL = MI 2
+ANDROID_VERSION = 5.0.2
+APP_VERSION_NAME = 1.0
+LOGCAT = [ 10-27 20:22:42.654 10936:11038 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-27 20:22:42.654 10936:11038 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-27 20:22:42.654 10936:11038 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-27 20:22:42.654 10936:11038 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 10-27 20:22:42.654 10936:11038 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 10-27 20:22:42.654 10936:11038 W/System.err ]
+	... 3 more
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+java.io.FileNotFoundException: /storage/sdcard0/Android/data/com.dog.superdoglife/cache/20151003021.jpg: open failed: ENOENT (No such file or directory)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 10-27 20:22:42.974 10936:11061 W/System.err ]
+	... 3 more
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+java.io.FileNotFoundException: /storage/sdcard0/Android/data/com.dog.superdoglife/cache/20151003015.jpg: open failed: ENOENT (No such file or directory)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 10-27 20:22:43.224 10936:11075 W/System.err ]
+	... 3 more
+
+[ 10-27 20:22:52.814 10936:11228 E/FavIdInfoLoader ]
+No value for id_code
+
+[ 10-27 20:22:53.104 10936:10936 E/ACRA     ]
+ACRA caught a NullPointerException for com.dog.superdoglife
+java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.Object[] java.util.Collection.toArray()' on a null object reference
+	at java.util.ArrayList.addAll(ArrayList.java:188)
+	at com.dog.b2c.choice.ChoiceListAdapter.refill(ChoiceListAdapter.java:184)
+	at com.dog.superdoglife.WantBuyActivity$1.notifyLoadComplete(WantBuyActivity.java:40)
+	at com.dog.userinfo.UserFavInfoLoader$1.handleMessage(UserFavInfoLoader.java:48)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+
+
+[ 10-27 20:22:53.284 10936:11234 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+

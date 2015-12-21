@@ -1,0 +1,146 @@
+CUSTOM_DATA = 
+LOGCAT = Caused by: java.lang.OutOfMemoryError
+	at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:601)
+	at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:434)
+	at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:840)
+	at android.content.res.Resources.createFromResourceStream(Resources.java:2513)
+	at android.content.res.Resources.loadDrawable(Resources.java:2165)
+	at android.content.res.MiuiResources.loadDrawable(MiuiResources.java:348)
+	at android.content.res.Resources.loadDrawable(Resources.java:2072)
+	at android.content.res.TypedArray.getDrawable(TypedArray.java:602)
+	at android.widget.ImageView.<init>(ImageView.java:129)
+	at android.widget.ImageView.<init>(ImageView.java:119)
+	... 27 more
+
+
+[ 10-10 23:00:57.888  5669: 7119 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+[ 10-10 23:00:59.968  5669: 7127 E/ACRA     ]
+com.dog.superdoglife fatal error : Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.WelcomeActivity}: android.view.InflateException: Binary XML file line #9: Error inflating class <unknown>
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.WelcomeActivity}: android.view.InflateException: Binary XML file line #9: Error inflating class <unknown>
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: android.view.InflateException: Binary XML file line #9: Error inflating class <unknown>
+	at android.view.LayoutInflater.createView(LayoutInflater.java:623)
+	at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:672)
+	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:697)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:495)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:400)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:290)
+	at android.app.Activity.setContentView(Activity.java:1947)
+	at com.dog.superdoglife.WelcomeActivity.onCreate(WelcomeActivity.java:21)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Constructor.constructNative(Native Method)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at android.view.LayoutInflater.createView(LayoutInflater.java:597)
+	... 24 more
+Caused by: java.lang.OutOfMemoryError
+	at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:601)
+	at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:434)
+	at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:840)
+	at android.content.res.Resources.createFromResourceStream(Resources.java:2513)
+	at android.content.res.Resources.loadDrawable(Resources.java:2165)
+	at android.content.res.MiuiResources.loadDrawable(MiuiResources.java:348)
+	at android.content.res.Resources.loadDrawable(Resources.java:2072)
+	at android.content.res.TypedArray.getDrawable(TypedArray.java:602)
+	at android.widget.ImageView.<init>(ImageView.java:129)
+	at android.widget.ImageView.<init>(ImageView.java:119)
+	... 27 more
+
+
+[ 10-10 23:01:00.478  7132: 7132 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41b51d58)
+
+[ 10-10 23:01:00.478  7132: 7132 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:69)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+
+
+[ 10-10 23:01:00.488  7132: 7165 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:69)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:69)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

@@ -1,0 +1,127 @@
+CUSTOM_DATA = 
+LOGCAT = [ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:416)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+
+[ 11-19 10:47:29.617  6448: 6507 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:400)
+
+[ 11-19 10:47:29.627  6448: 6507 W/System.err ]
+	... 3 more
+
+[ 11-19 10:47:30.197   290:  304 W/ActivityManager ]
+Activity idle timeout for ActivityRecord{41411ab0 u0 com.dog.superdoglife/.MainActivity}
+
+[ 11-19 10:47:30.536  6448: 6525 W/System.err ]
+java.io.FileNotFoundException: /mnt/sdcard/Android/data/com.dog.superdoglife/cache/20151003015.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:416)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:400)
+
+[ 11-19 10:47:30.546  6448: 6525 W/System.err ]
+	... 3 more
+
+[ 11-19 10:47:31.386   290:  301 W/InputMethodManagerService ]
+Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@412821a8 attribute=android.view.inputmethod.EditorInfo@4125a078, token = android.os.BinderProxy@416031f8
+
+[ 11-19 10:47:31.737   290:  520 W/WindowManager ]
+Failure taking screenshot for (246x410) to layer 21010
+
+[ 11-19 10:47:31.957    37:   96 E/SurfaceFlinger ]
+ro.sf.lcd_density must be defined as a build property
+
+[ 11-19 10:47:31.997   290:  520 W/InputMethodManagerService ]
+Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@413f5900 (uid=10007 pid=6448)
+
+[ 11-19 10:47:32.296  6448: 6448 E/ActivityThread ]
+Failed to find provider info for com.sina.weibo.sdkProvider
+
+[ 11-19 10:47:32.516  6448: 6448 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-19 10:47:32.677  6448: 6540 W/dalvikvm ]
+Exception Ljava/lang/UnsatisfiedLinkError; thrown while initializing Lcom/sina/weibo/sdk/net/HttpManager;
+
+[ 11-19 10:47:32.697  6448: 6540 W/dalvikvm ]
+threadid=11: thread exiting with uncaught exception (group=0x40a71930)
+
+[ 11-19 10:47:32.737  6448: 6540 E/ACRA     ]
+ACRA caught a ExceptionInInitializerError for com.dog.superdoglife
+java.lang.ExceptionInInitializerError
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	... 5 more
+
+
+
+STACK_TRACE = java.lang.ExceptionInInitializerError
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	... 5 more
+java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+
+PHONE_MODEL = Full Android on Emulator
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

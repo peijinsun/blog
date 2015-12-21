@@ -1,0 +1,95 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+PHONE_MODEL = SM-G9208
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = --------- beginning of main
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+	at com.dog.common.tools.CommonTools.getBitmap(CommonTools.java:141)
+
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+	at com.dog.common.tools.AsyncImageLoader$2.run(AsyncImageLoader.java:44)
+
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-25 17:26:09.831 31408:31989 W/System.err ]
+	... 3 more
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.dog.superdoglife/cache/20151003015.jpg: open failed: ENOENT (No such file or directory)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at com.dog.common.tools.CommonTools.getBitmap(CommonTools.java:141)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at com.dog.common.tools.AsyncImageLoader$2.run(AsyncImageLoader.java:44)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 11-25 17:26:09.901 31408:31990 W/System.err ]
+	... 3 more
+
+--------- beginning of system
+[ 11-25 17:26:18.701 31408:31408 E/ActivityThread ]
+Failed to find provider info for com.sina.weibo.sdkProvider
+
+[ 11-25 17:26:18.711 31408:32026 W/System.err ]
+remove failed: ENOENT (No such file or directory) : /data/data/com.dog.superdoglife/files/weibo_sdk_aid0
+
+[ 11-25 17:26:18.721 31408:31408 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-25 17:26:18.751 31408:32027 E/ACRA     ]
+ACRA caught a UnsatisfiedLinkError for com.dog.superdoglife
+java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.dog.superdoglife-1/base.apk"],nativeLibraryDirectories=[/vendor/lib64, /system/lib64]]] couldn't find "libweibosdkcore.so"
+	at java.lang.Runtime.loadLibrary(Runtime.java:366)
+	at java.lang.System.loadLibrary(System.java:988)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:818)
+
+
+[ 11-25 17:26:18.801 31408:31408 W/MtaSDK   ]
+[main(1): null:-1] - MTA SDK AutoExceptionCaught is disable
+
+

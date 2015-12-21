@@ -1,0 +1,82 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+[ 11-24 15:51:33.392 26449:26449 W/ActivityThread ]
+Application com.dog.superdoglife can be debugged on port 8100...
+
+[ 11-24 15:51:35.662 26449:26449 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41709d58)
+
+[ 11-24 15:51:35.672 26449:26449 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.ClassCastException: android.widget.LinearLayout cannot be cast to android.widget.RelativeLayout
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ClassCastException: android.widget.LinearLayout cannot be cast to android.widget.RelativeLayout
+	at com.dog.b2c.choice.ChoiceActivity.initChoiceView(ChoiceActivity.java:71)
+	at com.dog.b2c.choice.ChoiceActivity.<init>(ChoiceActivity.java:65)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:100)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2165)
+	... 11 more
+
+
+[ 11-24 15:51:35.672 26449:26558 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.ClassCastException: android.widget.LinearLayout cannot be cast to android.widget.RelativeLayout
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ClassCastException: android.widget.LinearLayout cannot be cast to android.widget.RelativeLayout
+	at com.dog.b2c.choice.ChoiceActivity.initChoiceView(ChoiceActivity.java:71)
+	at com.dog.b2c.choice.ChoiceActivity.<init>(ChoiceActivity.java:65)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:100)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2165)
+	... 11 more
+java.lang.ClassCastException: android.widget.LinearLayout cannot be cast to android.widget.RelativeLayout
+	at com.dog.b2c.choice.ChoiceActivity.initChoiceView(ChoiceActivity.java:71)
+	at com.dog.b2c.choice.ChoiceActivity.<init>(ChoiceActivity.java:65)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:100)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2165)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

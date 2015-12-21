@@ -1,0 +1,139 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/system
+--------- beginning of /dev/log/main
+[ 10-20 19:19:24.059 11217:0x2bd1 W/MtaSDK   ]
+[main(1): null:-1] - MTA SDK AutoExceptionCaught is disable
+
+[ 10-20 19:19:24.241 11217:0x2bd1 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x410199a8)
+
+[ 10-20 19:19:24.241 11217:0x2bd1 W/dalvikvm ]
+threadid=1: uncaught exception occurred
+
+[ 10-20 19:19:24.241 11217:0x2bd1 W/System.err ]
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.userinfo.LoginActivity}: java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.os.Looper.loop(Looper.java:194)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at java.lang.reflect.Method.invoke(Method.java:525)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+
+[ 10-20 19:19:24.242 11217:0x2bd1 W/System.err ]
+	at dalvik.system.NativeStart.main(Native Method)
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/System.err ]
+Caused by: java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/System.err ]
+	at com.dog.userinfo.LoginActivity.onCreate(LoginActivity.java:191)
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/System.err ]
+	at android.app.Activity.performCreate(Activity.java:5211)
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/System.err ]
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/System.err ]
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/System.err ]
+	... 11 more
+
+[ 10-20 19:19:24.243 11217:0x2bd1 W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 10-20 19:19:24.245 11217:0x2bd1 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.userinfo.LoginActivity}: java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+	at com.dog.userinfo.LoginActivity.onCreate(LoginActivity.java:191)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	... 11 more
+
+
+[ 10-20 19:19:24.293 11217:0x2c56 E/MtaSDK   ]
+[StatDispatcher(17556): null:-1] - Server response error code:404, error:{"ret":-1, "msg":"invalid appkey"}
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.userinfo.LoginActivity}: java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+	at com.dog.userinfo.LoginActivity.onCreate(LoginActivity.java:191)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	... 11 more
+java.lang.ClassCastException: android.widget.TextView cannot be cast to android.widget.Button
+	at com.dog.userinfo.LoginActivity.onCreate(LoginActivity.java:191)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

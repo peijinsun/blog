@@ -1,0 +1,56 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+[ 11-25 11:51:02.404 27322:27322 W/ActivityThread ]
+Application com.dog.superdoglife can be debugged on port 8100...
+
+[ 11-25 11:51:04.584 27322:27322 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41709d58)
+
+[ 11-25 11:51:04.584 27322:27322 E/ACRA     ]
+ACRA caught a NullPointerException for com.dog.superdoglife
+java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceActivity$4.notifyColorChange(ChoiceActivity.java:199)
+	at com.dog.superdoglife.EnvirVariable.setStatusBarColor(EnvirVariable.java:44)
+	at com.dog.b2c.choice.ChoiceActivity.getBanChoiceViewList(ChoiceActivity.java:267)
+	at com.dog.b2c.choice.ChoiceActivity.setChoiceBannerViewPager(ChoiceActivity.java:248)
+	at com.dog.b2c.choice.ChoiceActivity.access$20(ChoiceActivity.java:245)
+	at com.dog.b2c.choice.ChoiceActivity$3.notifyBannerDataChange(ChoiceActivity.java:181)
+	at com.dog.b2c.choice.datastruct.B2CCategoryList.updateBannerList(B2CCategoryList.java:37)
+	at com.dog.b2c.choice.ChoiceInfoLoader$1.handleMessage(ChoiceInfoLoader.java:49)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+[ 11-25 11:51:04.624 27322:27384 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.NullPointerException
+	at com.dog.b2c.choice.ChoiceActivity$4.notifyColorChange(ChoiceActivity.java:199)
+	at com.dog.superdoglife.EnvirVariable.setStatusBarColor(EnvirVariable.java:44)
+	at com.dog.b2c.choice.ChoiceActivity.getBanChoiceViewList(ChoiceActivity.java:267)
+	at com.dog.b2c.choice.ChoiceActivity.setChoiceBannerViewPager(ChoiceActivity.java:248)
+	at com.dog.b2c.choice.ChoiceActivity.access$20(ChoiceActivity.java:245)
+	at com.dog.b2c.choice.ChoiceActivity$3.notifyBannerDataChange(ChoiceActivity.java:181)
+	at com.dog.b2c.choice.datastruct.B2CCategoryList.updateBannerList(B2CCategoryList.java:37)
+	at com.dog.b2c.choice.ChoiceInfoLoader$1.handleMessage(ChoiceInfoLoader.java:49)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5065)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

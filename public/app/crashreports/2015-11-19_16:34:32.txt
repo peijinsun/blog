@@ -1,0 +1,136 @@
+CUSTOM_DATA = 
+LOGCAT = --------- beginning of /dev/log/main
+[ 11-19 16:34:31.268 26480:0x6770 W/asset    ]
+AssetManager-->addDefaultAssets CIP path not exsit!
+
+--------- beginning of /dev/log/system
+[ 11-19 16:34:31.728 26480:0x6770 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41c099a8)
+
+[ 11-19 16:34:31.728 26480:0x6770 W/dalvikvm ]
+threadid=1: uncaught exception occurred
+
+[ 11-19 16:34:31.728 26480:0x6770 W/System.err ]
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.WelcomeActivity}: java.lang.NullPointerException
+
+[ 11-19 16:34:31.728 26480:0x6770 W/System.err ]
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at android.os.Looper.loop(Looper.java:194)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at java.lang.reflect.Method.invoke(Method.java:525)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+	at dalvik.system.NativeStart.main(Native Method)
+
+[ 11-19 16:34:31.729 26480:0x6770 W/System.err ]
+Caused by: java.lang.NullPointerException
+
+[ 11-19 16:34:31.730 26480:0x6770 W/System.err ]
+	at com.dog.superdoglife.WelcomeActivity.onCreate(WelcomeActivity.java:110)
+
+[ 11-19 16:34:31.730 26480:0x6770 W/System.err ]
+	at android.app.Activity.performCreate(Activity.java:5211)
+
+[ 11-19 16:34:31.730 26480:0x6770 W/System.err ]
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+
+[ 11-19 16:34:31.730 26480:0x6770 W/System.err ]
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+
+[ 11-19 16:34:31.730 26480:0x6770 W/System.err ]
+	... 11 more
+
+[ 11-19 16:34:31.730 26480:0x6770 W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 11-19 16:34:31.731 26480:0x6770 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.WelcomeActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.superdoglife.WelcomeActivity.onCreate(WelcomeActivity.java:110)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	... 11 more
+
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.WelcomeActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.dog.superdoglife.WelcomeActivity.onCreate(WelcomeActivity.java:110)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	... 11 more
+java.lang.NullPointerException
+	at com.dog.superdoglife.WelcomeActivity.onCreate(WelcomeActivity.java:110)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

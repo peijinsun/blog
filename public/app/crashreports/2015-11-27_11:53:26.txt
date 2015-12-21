@@ -1,0 +1,131 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at com.dog.o2o.platform.PlatformActivity.initNavigationView(PlatformActivity.java:38)
+	at com.dog.o2o.platform.PlatformActivity.<init>(PlatformActivity.java:27)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:104)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	... 10 more
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at com.dog.o2o.platform.PlatformActivity.initNavigationView(PlatformActivity.java:38)
+	at com.dog.o2o.platform.PlatformActivity.<init>(PlatformActivity.java:27)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:104)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+
+PHONE_MODEL = SM-G9208
+ANDROID_VERSION = 5.1.1
+APP_VERSION_NAME = 1.0
+LOGCAT = --------- beginning of main
+[ 11-27 11:53:11.441 14179:14302 W/OpenGLRenderer ]
+Program(f4c73900) : invalid binary - source difference(vs(201:201)/fs(94:0)-b0000000000000000)
+
+[ 11-27 11:53:11.461 14179:14302 W/OpenGLRenderer ]
+Program(f4c73ac0) : invalid binary - source difference(vs(290:290)/fs(169:0)-b0000000000000001)
+
+--------- beginning of system
+[ 11-27 11:53:12.811 14179:14179 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at com.dog.o2o.platform.PlatformActivity.initNavigationView(PlatformActivity.java:38)
+	at com.dog.o2o.platform.PlatformActivity.<init>(PlatformActivity.java:27)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:104)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	... 10 more
+
+
+[ 11-27 11:53:12.921 14179:14302 W/OpenGLRenderer ]
+Program(f4c73d60) : invalid binary - source difference(vs(290:290)/fs(199:0)-b0000000800000003)
+
+[ 11-27 11:53:14.981 14179:14601 E/ACRA     ]
+com.dog.superdoglife fatal error : Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at com.dog.o2o.platform.PlatformActivity.initNavigationView(PlatformActivity.java:38)
+	at com.dog.o2o.platform.PlatformActivity.<init>(PlatformActivity.java:27)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:104)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	... 10 more
+
+
+[ 11-27 11:53:23.721 14969:14969 E/SELinux  ]
+[DEBUG] get_category: variable seinfo: default sensitivity: NULL, cateogry: NULL
+
+
+[ 11-27 11:53:25.541 14969:14969 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3218)
+	at android.app.ActivityThread.access$1000(ActivityThread.java:198)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1676)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:145)
+	at android.app.ActivityThread.main(ActivityThread.java:6837)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.view.ViewPager.setAdapter(android.support.v4.view.PagerAdapter)' on a null object reference
+	at com.dog.o2o.platform.PlatformActivity.initNavigationView(PlatformActivity.java:38)
+	at com.dog.o2o.platform.PlatformActivity.<init>(PlatformActivity.java:27)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:104)
+	at android.app.Activity.performCreate(Activity.java:6500)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3072)
+	... 10 more
+
+
+

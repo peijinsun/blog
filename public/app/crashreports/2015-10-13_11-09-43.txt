@@ -1,0 +1,131 @@
+APP_VERSION_CODE = 1
+CUSTOM_DATA = 
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2303)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+	at com.dog.superdoglife.MainActivity.initUserInfo(MainActivity.java:117)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:81)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	... 10 more
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+	at com.dog.superdoglife.MainActivity.initUserInfo(MainActivity.java:117)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:81)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+
+PHONE_MODEL = MI 2
+ANDROID_VERSION = 5.0.2
+APP_VERSION_NAME = 1.0
+LOGCAT = --------- beginning of main
+[ 10-13 11:05:50.406 29212:29212 E/openSDK_LOG.APNUtil ]
+getApn has exception: No permission to write APN settings
+
+
+[ 10-13 11:05:50.756 29212:29751 E/openSDK_LOG.APNUtil ]
+getApn has exception: No permission to write APN settings
+
+
+[ 10-13 11:05:50.756 29212:29751 E/openSDK_LOG.Util ]
+getPackageInfo has exception: com.qzone
+
+
+[ 10-13 11:05:55.471 29212:29212 W/IInputConnectionWrapper ]
+showStatusIcon on inactive InputConnection
+
+[ 10-13 11:06:04.480 29212:29212 E/openSDK_LOG.UIListenerManager ]
+getListner action is null! rquestCode=11101
+
+
+[ 10-13 11:06:04.480 29212:29212 E/openSDK_LOG.UIListenerManager ]
+登录的接口回调不能重新构建，暂时无法提供，先记录下来这种情况是否存在
+
+
+[ 10-13 11:06:05.080 29212:30101 E/UserInfoLoader ]
+result:{"id":"00000100004","username":"","phone":"","password":"","point":"0","qquid":"32ACA68BD6F89AEE3E53892A096401F6","weixinuid":"","weibouid":""}???
+
+[ 10-13 11:06:12.497 29212:30160 W/System.err ]
+java.io.FileNotFoundException: /storage/sdcard0/Android/data/com.dog.superdoglife/cache/logo_405.png: open failed: ENOENT (No such file or directory)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:456)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at java.io.FileInputStream.<init>(FileInputStream.java:76)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at com.dog.function.CommonTools.getBitmap(CommonTools.java:174)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at com.dog.function.AsyncImageLoader$2.run(AsyncImageLoader.java:46)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at libcore.io.Posix.open(Native Method)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	at libcore.io.IoBridge.open(IoBridge.java:442)
+
+[ 10-13 11:06:12.517 29212:30160 W/System.err ]
+	... 3 more
+
+[ 10-13 11:06:42.857 29212:30460 E/UserInfoLoader ]
+result:{"id":"00000100004","username":"","phone":"","password":"","point":"0","qquid":"32ACA68BD6F89AEE3E53892A096401F6","weixinuid":"","weibouid":""}???
+
+[ 10-13 11:09:40.791 31462:31499 E/UserInfoLoader ]
+result:{"id":"00000100004","username":"","phone":"","password":"","point":"0","qquid":"32ACA68BD6F89AEE3E53892A096401F6","weixinuid":"","weibouid":""}???
+
+[ 10-13 11:09:41.651 31462:31462 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2303)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2363)
+	at android.app.ActivityThread.access$800(ActivityThread.java:147)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:135)
+	at android.app.ActivityThread.main(ActivityThread.java:5235)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:701)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+	at com.dog.superdoglife.MainActivity.initUserInfo(MainActivity.java:117)
+	at com.dog.superdoglife.MainActivity.onCreate(MainActivity.java:81)
+	at android.app.Activity.performCreate(Activity.java:5941)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2256)
+	... 10 more
+
+
+[ 10-13 11:09:41.672 31462:31511 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+

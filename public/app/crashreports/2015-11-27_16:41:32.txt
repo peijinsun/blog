@@ -1,0 +1,155 @@
+CUSTOM_DATA = 
+LOGCAT = [ 11-27 16:41:31.463  7565:0x1d8d W/System.err ]
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1211)
+
+[ 11-27 16:41:31.463  7565:0x1d8d W/System.err ]
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5039)
+
+[ 11-27 16:41:31.463  7565:0x1d8d W/System.err ]
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:776)
+
+[ 11-27 16:41:31.463  7565:0x1d8d W/System.err ]
+	at android.view.Choreographer.doCallbacks(Choreographer.java:579)
+
+[ 11-27 16:41:31.463  7565:0x1d8d W/System.err ]
+	at android.view.Choreographer.doFrame(Choreographer.java:548)
+
+[ 11-27 16:41:31.464  7565:0x1d8d W/System.err ]
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:762)
+
+[ 11-27 16:41:31.464  7565:0x1d8d W/System.err ]
+	at android.os.Handler.handleCallback(Handler.java:800)
+
+[ 11-27 16:41:31.464  7565:0x1d8d W/System.err ]
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+
+[ 11-27 16:41:31.464  7565:0x1d8d W/System.err ]
+	at android.os.Looper.loop(Looper.java:194)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/System.err ]
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/System.err ]
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/System.err ]
+	at java.lang.reflect.Method.invoke(Method.java:525)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/System.err ]
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/System.err ]
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/System.err ]
+	at dalvik.system.NativeStart.main(Native Method)
+
+[ 11-27 16:41:31.465  7565:0x1d8d W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 11-27 16:41:31.470  7565:0x1d8d E/ACRA     ]
+ACRA caught a IllegalStateException for com.dog.superdoglife
+java.lang.IllegalStateException: ViewPager has not been bound.
+	at com.viewpagerindicator.TabPageIndicator.setCurrentItem(TabPageIndicator.java:240)
+	at com.viewpagerindicator.TabPageIndicator.onMeasure(TabPageIndicator.java:116)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1435)
+	at android.widget.LinearLayout.measureVertical(LinearLayout.java:717)
+	at android.widget.LinearLayout.onMeasure(LinearLayout.java:607)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1435)
+	at android.widget.LinearLayout.measureVertical(LinearLayout.java:717)
+	at android.widget.LinearLayout.onMeasure(LinearLayout.java:607)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at com.android.internal.policy.impl.PhoneWindow$DecorView.onMeasure(PhoneWindow.java:2212)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2259)
+	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1321)
+	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1516)
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1211)
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5039)
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:776)
+	at android.view.Choreographer.doCallbacks(Choreographer.java:579)
+	at android.view.Choreographer.doFrame(Choreographer.java:548)
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:762)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+STACK_TRACE = java.lang.IllegalStateException: ViewPager has not been bound.
+	at com.viewpagerindicator.TabPageIndicator.setCurrentItem(TabPageIndicator.java:240)
+	at com.viewpagerindicator.TabPageIndicator.onMeasure(TabPageIndicator.java:116)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1435)
+	at android.widget.LinearLayout.measureVertical(LinearLayout.java:717)
+	at android.widget.LinearLayout.onMeasure(LinearLayout.java:607)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1435)
+	at android.widget.LinearLayout.measureVertical(LinearLayout.java:717)
+	at android.widget.LinearLayout.onMeasure(LinearLayout.java:607)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:4959)
+	at android.widget.FrameLayout.onMeasure(FrameLayout.java:310)
+	at com.android.internal.policy.impl.PhoneWindow$DecorView.onMeasure(PhoneWindow.java:2212)
+	at android.view.View.measure(View.java:15807)
+	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2259)
+	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1321)
+	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1516)
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1211)
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5039)
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:776)
+	at android.view.Choreographer.doCallbacks(Choreographer.java:579)
+	at android.view.Choreographer.doFrame(Choreographer.java:548)
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:762)
+	at android.os.Handler.handleCallback(Handler.java:800)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

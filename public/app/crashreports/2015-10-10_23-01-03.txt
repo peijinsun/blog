@@ -1,0 +1,160 @@
+CUSTOM_DATA = 
+LOGCAT = 	at android.content.res.TypedArray.getDrawable(TypedArray.java:602)
+	at android.widget.ImageView.<init>(ImageView.java:129)
+	at android.widget.ImageView.<init>(ImageView.java:119)
+	... 27 more
+
+
+[ 10-10 23:01:00.478  7132: 7132 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41b51d58)
+
+[ 10-10 23:01:00.478  7132: 7132 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:69)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+
+
+[ 10-10 23:01:00.488  7132: 7165 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+[ 10-10 23:01:02.538  7132: 7178 E/ACRA     ]
+com.dog.superdoglife fatal error : Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.b2c.choice.ChoiceDetailActivity}: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+	at java.util.ArrayList.get(ArrayList.java:308)
+	at com.dog.b2c.choice.ChoiceDetailActivity.onCreate(ChoiceDetailActivity.java:69)
+	at android.app.Activity.performCreate(Activity.java:5249)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2156)
+	... 11 more
+
+
+[ 10-10 23:01:03.198  7184: 7184 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41b51d58)
+
+[ 10-10 23:01:03.198  7184: 7184 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.view.View.onRestoreInstanceState(View.java:12834)
+	at android.view.View.dispatchRestoreInstanceState(View.java:12810)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2637)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.View.restoreHierarchyState(View.java:12788)
+	at com.android.internal.policy.impl.PhoneWindow.restoreHierarchyState(PhoneWindow.java:1744)
+	at android.app.Activity.onRestoreInstanceState(Activity.java:955)
+	at android.app.Activity.performRestoreInstanceState(Activity.java:927)
+	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2170)
+	... 11 more
+
+
+[ 10-10 23:01:03.208  7184: 7212 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.superdoglife.MainActivity}: java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.view.View.onRestoreInstanceState(View.java:12834)
+	at android.view.View.dispatchRestoreInstanceState(View.java:12810)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2637)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.View.restoreHierarchyState(View.java:12788)
+	at com.android.internal.policy.impl.PhoneWindow.restoreHierarchyState(PhoneWindow.java:1744)
+	at android.app.Activity.onRestoreInstanceState(Activity.java:955)
+	at android.app.Activity.performRestoreInstanceState(Activity.java:927)
+	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2170)
+	... 11 more
+java.lang.IllegalArgumentException: Wrong state class, expecting View State but received class android.widget.CompoundButton$SavedState instead. This usually happens when two views of different type have the same id in the same hierarchy. This view's id is id/favorable. Make sure other views do not use the same id.
+	at android.view.View.onRestoreInstanceState(View.java:12834)
+	at android.view.View.dispatchRestoreInstanceState(View.java:12810)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2637)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:2643)
+	at android.view.View.restoreHierarchyState(View.java:12788)
+	at com.android.internal.policy.impl.PhoneWindow.restoreHierarchyState(PhoneWindow.java:1744)
+	at android.app.Activity.onRestoreInstanceState(Activity.java:955)
+	at android.app.Activity.performRestoreInstanceState(Activity.java:927)
+	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2170)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+	at android.os.Handler.dispatchMessage(Handler.java:102)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

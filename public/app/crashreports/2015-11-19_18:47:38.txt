@@ -1,0 +1,127 @@
+CUSTOM_DATA = 
+LOGCAT = 	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	... 5 more
+
+
+[ 11-19 10:47:34.536  6448: 6448 W/MtaSDK   ]
+[main(1): null:-1] - MTA SDK AutoExceptionCaught is disable
+
+[ 11-19 10:47:34.977  6448: 6555 E/ACRA     ]
+com.dog.superdoglife fatal error : null
+java.lang.ExceptionInInitializerError
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	... 5 more
+
+
+[ 11-19 10:47:35.047   290:  325 W/InputDispatcher ]
+channel '412667a8 Toast (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+
+[ 11-19 10:47:35.047   290:  325 E/InputDispatcher ]
+channel '412667a8 Toast (server)' ~ Channel is unrecoverably broken and will be disposed!
+
+[ 11-19 10:47:35.047   290:  325 W/InputDispatcher ]
+channel '41603450 com.dog.superdoglife/com.dog.superdoglife.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+
+[ 11-19 10:47:35.047   290:  325 E/InputDispatcher ]
+channel '41603450 com.dog.superdoglife/com.dog.superdoglife.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+
+[ 11-19 10:47:35.057   290: 2679 W/InputDispatcher ]
+Attempted to unregister already unregistered input channel '412667a8 Toast (server)'
+
+[ 11-19 10:47:35.067   290:  439 W/ActivityManager ]
+Force removing ActivityRecord{41411ab0 u0 com.dog.superdoglife/.MainActivity}: app died, no saved state
+
+[ 11-19 10:47:35.067   290:  301 W/InputDispatcher ]
+Attempted to unregister already unregistered input channel '41603450 com.dog.superdoglife/com.dog.superdoglife.MainActivity (server)'
+
+[ 11-19 10:47:35.217   290:  304 W/NotificationService ]
+Object died trying to hide notification android.app.ITransientNotification$Stub$Proxy@412eed88 in package com.dog.superdoglife
+
+[ 11-19 10:47:35.217   290:  304 W/ActivityManager ]
+setProcessForeground called on unknown pid: 6448
+
+[ 11-19 10:47:35.217   290:  304 W/NotificationService ]
+Object died trying to show notification android.app.ITransientNotification$Stub$Proxy@4147f5d8 in package com.dog.superdoglife
+
+[ 11-19 10:47:35.217   290:  304 W/ActivityManager ]
+setProcessForeground called on unknown pid: 6448
+
+[ 11-19 10:47:35.217   290:  304 W/NotificationService ]
+Object died trying to show notification android.app.ITransientNotification$Stub$Proxy@413e3918 in package com.dog.superdoglife
+
+[ 11-19 10:47:35.286  6559: 6559 E/Trace    ]
+error opening trace file: No such file or directory (2)
+
+[ 11-19 10:47:35.927  6559: 6559 E/ActivityThread ]
+Failed to find provider info for com.sina.weibo.sdkProvider
+
+[ 11-19 10:47:36.027  6559: 6559 E/openSDK_LOG ]
+com.dog.superdoglife SDK_VERSION:2.9.3
+
+
+[ 11-19 10:47:36.127  6559: 6574 W/dalvikvm ]
+Exception Ljava/lang/UnsatisfiedLinkError; thrown while initializing Lcom/sina/weibo/sdk/net/HttpManager;
+
+[ 11-19 10:47:36.137  6559: 6574 W/dalvikvm ]
+threadid=11: thread exiting with uncaught exception (group=0x40a71930)
+
+[ 11-19 10:47:36.137  6559: 6574 E/ACRA     ]
+ACRA caught a ExceptionInInitializerError for com.dog.superdoglife
+java.lang.ExceptionInInitializerError
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	... 5 more
+
+
+[ 11-19 10:47:36.396    37:  433 E/SurfaceFlinger ]
+ro.sf.lcd_density must be defined as a build property
+
+[ 11-19 10:47:36.637  6559: 6559 W/MtaSDK   ]
+[main(1): null:-1] - !!!!!!MTA StatService has been disabled!!!!!!
+
+[ 11-19 10:47:36.707  6559: 6559 W/MtaSDK   ]
+[main(1): null:-1] - !!!!!!MTA StatService has been disabled!!!!!!
+
+
+STACK_TRACE = java.lang.ExceptionInInitializerError
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+Caused by: java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	... 5 more
+java.lang.UnsatisfiedLinkError: Couldn't load weibosdkcore from loader dalvik.system.PathClassLoader[dexPath=/data/app/com.dog.superdoglife-1.apk,libraryPath=/data/app-lib/com.dog.superdoglife-1]: findLibrary returned null
+	at java.lang.Runtime.loadLibrary(Runtime.java:365)
+	at java.lang.System.loadLibrary(System.java:535)
+	at com.sina.weibo.sdk.net.HttpManager.<clinit>(HttpManager.java:83)
+	at com.sina.weibo.sdk.net.NetUtils.internalHttpRequest(NetUtils.java:46)
+	at com.sina.weibo.sdk.utils.AidTask.loadAidFromNet(AidTask.java:344)
+	at com.sina.weibo.sdk.utils.AidTask.access$3(AidTask.java:331)
+	at com.sina.weibo.sdk.utils.AidTask$2.run(AidTask.java:203)
+	at java.lang.Thread.run(Thread.java:856)
+
+PHONE_MODEL = Full Android on Emulator
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

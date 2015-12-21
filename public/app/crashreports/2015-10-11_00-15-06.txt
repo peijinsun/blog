@@ -1,0 +1,166 @@
+CUSTOM_DATA = 
+LOGCAT = 
+[ 10-11 00:14:55.741 19217:19217 W/InputEventReceiver ]
+Attempted to finish an input event but the input event receiver has already been disposed.
+
+[ 10-11 00:14:55.741 19217:19217 W/ViewRootImpl ]
+Dropping event due to root view being removed: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x48, repeatCount=0, eventTime=10803362, downTime=10803362, deviceId=6, source=0x101 }
+
+[ 10-11 00:14:58.191 19217:19217 W/InputEventReceiver ]
+Attempted to finish an input event but the input event receiver has already been disposed.
+
+[ 10-11 00:14:58.191 19217:19217 W/ViewRootImpl ]
+Dropping event due to root view being removed: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x48, repeatCount=0, eventTime=10805818, downTime=10805818, deviceId=6, source=0x101 }
+
+[ 10-11 00:14:59.711 19217:19217 W/InputEventReceiver ]
+Attempted to finish an input event but the input event receiver has already been disposed.
+
+[ 10-11 00:14:59.711 19217:19217 W/ViewRootImpl ]
+Dropping event due to root view being removed: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x48, repeatCount=0, eventTime=10807329, downTime=10807329, deviceId=6, source=0x101 }
+
+[ 10-11 00:15:01.171 19217:19217 W/InputEventReceiver ]
+Attempted to finish an input event but the input event receiver has already been disposed.
+
+[ 10-11 00:15:01.171 19217:19217 W/ViewRootImpl ]
+Dropping event due to root view being removed: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x48, repeatCount=0, eventTime=10808802, downTime=10808802, deviceId=6, source=0x101 }
+
+[ 10-11 00:15:02.601 19217:19217 W/InputEventReceiver ]
+Attempted to finish an input event but the input event receiver has already been disposed.
+
+[ 10-11 00:15:02.601 19217:19217 W/ViewRootImpl ]
+Dropping event due to root view being removed: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=158, metaState=0, flags=0x48, repeatCount=0, eventTime=10810219, downTime=10810219, deviceId=6, source=0x101 }
+
+[ 10-11 00:15:05.961 19217:19217 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x41b51d58)
+
+[ 10-11 00:15:05.971 19217:19217 E/ACRA     ]
+ACRA caught a ClassCastException for com.dog.superdoglife
+java.lang.ClassCastException: com.dog.o2o.platform.PlatformDetailsActivity$6 cannot be cast to android.widget.BaseAdapter
+	at android.widget.FastScroller.getSectionsFromIndexer(FastScroller.java:883)
+	at android.widget.FastScroller.getPosFromItemCount(FastScroller.java:1155)
+	at android.widget.FastScroller.onItemCountChanged(FastScroller.java:461)
+	at android.widget.AbsListView.onLayout(AbsListView.java:2096)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.support.v4.view.ViewPager.onLayout(ViewPager.java:1626)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2026)
+	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1783)
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1039)
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5648)
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:761)
+	at android.view.Choreographer.doCallbacks(Choreographer.java:574)
+	at android.view.Choreographer.doFrame(Choreographer.java:544)
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:747)
+	at android.os.Handler.handleCallback(Handler.java:733)
+	at android.os.Handler.dispatchMessage(Handler.java:95)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+[ 10-11 00:15:06.041 19217:21167 W/Toast    ]
+From com.dog.superdoglife, go ahead.
+
+
+STACK_TRACE = java.lang.ClassCastException: com.dog.o2o.platform.PlatformDetailsActivity$6 cannot be cast to android.widget.BaseAdapter
+	at android.widget.FastScroller.getSectionsFromIndexer(FastScroller.java:883)
+	at android.widget.FastScroller.getPosFromItemCount(FastScroller.java:1155)
+	at android.widget.FastScroller.onItemCountChanged(FastScroller.java:461)
+	at android.widget.AbsListView.onLayout(AbsListView.java:2096)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.support.v4.view.ViewPager.onLayout(ViewPager.java:1626)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+	at android.view.View.layout(View.java:14845)
+	at android.view.ViewGroup.layout(ViewGroup.java:4631)
+	at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2026)
+	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1783)
+	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1039)
+	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5648)
+	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:761)
+	at android.view.Choreographer.doCallbacks(Choreographer.java:574)
+	at android.view.Choreographer.doFrame(Choreographer.java:544)
+	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:747)
+	at android.os.Handler.handleCallback(Handler.java:733)
+	at android.os.Handler.dispatchMessage(Handler.java:95)
+	at android.os.Looper.loop(Looper.java:136)
+	at android.app.ActivityThread.main(ActivityThread.java:5049)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:515)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = MI 4LTE
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.4.4
+APP_VERSION_CODE = 1

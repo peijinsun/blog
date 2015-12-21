@@ -1,0 +1,168 @@
+CUSTOM_DATA = 
+LOGCAT = 
+[ 11-17 14:59:46.893 10497:0x2901 W/System.err ]
+	at dalvik.system.NativeStart.main(Native Method)
+
+[ 11-17 14:59:46.893 10497:0x2901 W/System.err ]
+Caused by: java.lang.RuntimeException: Binary XML file line #39: You must supply a layout_width attribute.
+
+[ 11-17 14:59:46.894 10497:0x2901 W/System.err ]
+	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:496)
+
+[ 11-17 14:59:46.894 10497:0x2901 W/System.err ]
+	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:5748)
+
+[ 11-17 14:59:46.897 10497:0x2901 W/System.err ]
+	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:5890)
+
+[ 11-17 14:59:46.897 10497:0x2901 W/System.err ]
+	at android.widget.RelativeLayout$LayoutParams.<init>(RelativeLayout.java:1190)
+
+[ 11-17 14:59:46.897 10497:0x2901 W/System.err ]
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:1028)
+
+[ 11-17 14:59:46.897 10497:0x2901 W/System.err ]
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:70)
+
+[ 11-17 14:59:46.897 10497:0x2901 W/System.err ]
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:748)
+
+[ 11-17 14:59:46.898 10497:0x2901 W/System.err ]
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:749)
+
+[ 11-17 14:59:46.898 10497:0x2901 W/System.err ]
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+
+[ 11-17 14:59:46.898 10497:0x2901 W/System.err ]
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:274)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at android.app.Activity.setContentView(Activity.java:1895)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at com.dog.o2o.favorable.WebActivity.onCreate(WebActivity.java:52)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at android.app.Activity.performCreate(Activity.java:5211)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+
+[ 11-17 14:59:46.899 10497:0x2901 W/System.err ]
+	... 11 more
+
+[ 11-17 14:59:46.899 10497:0x2901 W/dalvikvm ]
+threadid=1: calling UncaughtExceptionHandler
+
+[ 11-17 14:59:46.902 10497:0x2901 E/ACRA     ]
+ACRA caught a RuntimeException for com.dog.superdoglife
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.o2o.favorable.WebActivity}: java.lang.RuntimeException: Binary XML file line #39: You must supply a layout_width attribute.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.RuntimeException: Binary XML file line #39: You must supply a layout_width attribute.
+	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:496)
+	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:5748)
+	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:5890)
+	at android.widget.RelativeLayout$LayoutParams.<init>(RelativeLayout.java:1190)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:1028)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:70)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:748)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:749)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:274)
+	at android.app.Activity.setContentView(Activity.java:1895)
+	at com.dog.o2o.favorable.WebActivity.onCreate(WebActivity.java:52)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	... 11 more
+
+
+
+STACK_TRACE = java.lang.RuntimeException: Unable to start activity ComponentInfo{com.dog.superdoglife/com.dog.o2o.favorable.WebActivity}: java.lang.RuntimeException: Binary XML file line #39: You must supply a layout_width attribute.
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2372)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.RuntimeException: Binary XML file line #39: You must supply a layout_width attribute.
+	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:496)
+	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:5748)
+	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:5890)
+	at android.widget.RelativeLayout$LayoutParams.<init>(RelativeLayout.java:1190)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:1028)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:70)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:748)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:749)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:274)
+	at android.app.Activity.setContentView(Activity.java:1895)
+	at com.dog.o2o.favorable.WebActivity.onCreate(WebActivity.java:52)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	... 11 more
+java.lang.RuntimeException: Binary XML file line #39: You must supply a layout_width attribute.
+	at android.content.res.TypedArray.getLayoutDimension(TypedArray.java:496)
+	at android.view.ViewGroup$LayoutParams.setBaseAttributes(ViewGroup.java:5748)
+	at android.view.ViewGroup$MarginLayoutParams.<init>(ViewGroup.java:5890)
+	at android.widget.RelativeLayout$LayoutParams.<init>(RelativeLayout.java:1190)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:1028)
+	at android.widget.RelativeLayout.generateLayoutParams(RelativeLayout.java:70)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:748)
+	at android.view.LayoutInflater.rInflate(LayoutInflater.java:749)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+	at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:274)
+	at android.app.Activity.setContentView(Activity.java:1895)
+	at com.dog.o2o.favorable.WebActivity.onCreate(WebActivity.java:52)
+	at android.app.Activity.performCreate(Activity.java:5211)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1146)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2336)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2424)
+	at android.app.ActivityThread.access$600(ActivityThread.java:169)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+	at android.os.Handler.dispatchMessage(Handler.java:107)
+	at android.os.Looper.loop(Looper.java:194)
+	at android.app.ActivityThread.main(ActivityThread.java:5433)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:525)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:922)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:689)
+	at dalvik.system.NativeStart.main(Native Method)
+
+PHONE_MODEL = H30-U10
+APP_VERSION_NAME = 1.0
+ANDROID_VERSION = 4.2.2
+APP_VERSION_CODE = 1

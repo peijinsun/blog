@@ -19,7 +19,7 @@
 	<div class="col-lg-9 col-md-9 col-sm-12">
 		<div class="row">
 			<div class="col-xs-12">
-				<p class="post-title"><a href="./article?id={{$discount['id']}}">{{ $discount['title'] }}</a> </p>
+				<p class="post-title"><a href="./article?id={{$discount['id']}}">{{ $discount['title'] }}</a> <span class="price"> &nbsp;&nbsp;{{$discount['price']}}</span></p>
 				<p class="publish-info">
 					<span>发布者：<span class="post-author">{{ $discount['author'] }}</span></span>
 					<span class="time-info pull-right">{{ $discount['time'] }}</span> 
@@ -40,7 +40,7 @@
 			<div class="col-xs-12">
 				<ul class="pull-right list-inline content-link">
 					<li>{{ $discount['source'] }}</li>
-					<li><a href="{{ $discount['url'] }}"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></li>
+					<li><a href="{{ $discount['url'] }}" target="_blank"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></li>
 				</ul>
 				<ul class="list-inline content-btn">
 					<li>
@@ -52,6 +52,7 @@
 		</div>
 	</div>
 </div>
+<hr>
 @endforeach
 <!-- Pagination -->
 <div id="mypagination" class="text-center pages">

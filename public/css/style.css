@@ -161,6 +161,16 @@ a,a:hover {
 .nav-tabs {
   border-bottom: 2px solid #5BC0DE;
 }
+.navbar.navbar-inverse {
+  background-color: #01AAD6;
+  border-color: #01AAD6;
+}
+.navbar.navbar-inverse li a {
+  color: #C8E3EA;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: #1592C1;
+}
 /* active tab color */
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
   color: #fff;
@@ -172,13 +182,20 @@ a,a:hover {
   border-color: #5BC0DE;
   background-color: #111111;
 }
+/* nav dropdown text color */
+.navbar-inverse .navbar-nav>.dropdown>ul a{
+  color: black;
+}
 .navbar-brand img {
   height: 40px;
   margin-top: -10px;
 }
-/* */
+/* 值button */
 .content-btn {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+.worth-btn {
+  height: 30px;
 }
 .content-btn .glyphicon {
   font-size: 1.4em;
@@ -219,4 +236,36 @@ a,a:hover {
 .discover-item img {
   height: 300px;
   width: 100%;
+}
+.label-info {
+  border-radius: .15em;
+  font-weight: normal;
+}
+.price { /* price 颜色*/
+  color: red;
+}
+.left-sign { /* 左边sign */
+  font-size: 20px;
+  border-left: 5px solid #01AAD6;
+}
+.item-box {
+  border-top: 1px solid #f2f2f2;
+  position: relative;
+  padding-top: 30px;
+}
+.subtitle-box {
+  font-size: 20px;
+  border-left: 5px solid #01AAD6;
+  height: 20px;
+  line-height: 23px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-left: 10px;
+}
+.content-wrapper {
+  padding-right: 40px;
 }

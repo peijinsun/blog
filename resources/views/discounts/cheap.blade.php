@@ -16,7 +16,7 @@
                 <div class="col-lg-12"><h4><a href="#">{{$cheap['title']}}</a></h4></div>
                 <div class="col-lg-12 cheap-price">{{$cheap['price']}}</div>
                 <div class="col-lg-12 cheap-intro">{{$cheap['content']}}</div>
-                <div class="col-lg-12 text-center"><a href="{{ $cheap['url'] }}"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></div>
+                <div class="col-lg-12 text-center"><a href="{{ $cheap['url'] }}" target="_blank"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></div>
             </div>
             
            

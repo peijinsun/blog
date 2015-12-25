@@ -9,6 +9,12 @@
 				$(this).html($(this).html() + '...');
 			};
 		});
+		$("a.cheap-title").each(function() {
+			if ($(this).text().length > 8) {
+				$(this).text($(this).text().substring(0, 8));
+				$(this).html($(this).html() + '...');
+			}
+		});
 		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/jQuery.paginate.js"></script>

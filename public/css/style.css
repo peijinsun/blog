@@ -232,6 +232,7 @@ a,a:hover {
 }
 .cheap-item img {
   height: 180px;
+  width: 100%;
 }
 .discover-item img {
   height: 300px;

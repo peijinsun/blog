@@ -11,7 +11,7 @@
 </div>
 <!-- Post -->
 @foreach ( $discounts as $discount )
-<div class="row">    
+<div class="row post-list">    
 	<br>
 	<div class="col-lg-3 col-md-3 col-sm-12 post-thumb text-center">
 		<a href="./article?id={{$discount['id']}}"><img src={{ $discount['thumbnail'] }}></a>

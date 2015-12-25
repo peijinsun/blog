@@ -269,3 +269,25 @@ a,a:hover {
 .content-wrapper {
   padding-right: 40px;
 }
+.post-list {
+  margin-top: -5px;
+  margin-bottom: -10px;
+}
+.discover-box {
+  position: relative;
+  display: inline-block;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.caption.discover-desc {
+  color: #FFF;
+  position: absolute;
+  bottom: 0px;
+  background: rgba(1, 170, 214, 0.5);
+  width: 100%;
+  top: 70%;
+  padding: 10px !important;
+  font-size: 22px;
+  text-align: left;
+}

@@ -3,7 +3,14 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-@media (min-width: 979px) {
+ /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .home-search { width: 100px; }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .home-search { width: 200px !important; } 
   #sticky.affix-top {
     position: static;
     margin-top:25px;
@@ -15,6 +22,11 @@
     top:55px;
     width:360px;
   }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .home-search { width: 300px !important; } 
 }
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
@@ -30,7 +42,7 @@ footer {
   background-color:#ededed;
 }
 .navbar-nav > li:hover, .navbar-nav > li.active, .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-nav > li > a:focus{
-    background-color: #5BC0DE;
+    background-color: #ef4135;
     color: #FFFFFF;
 }
 
@@ -86,14 +98,14 @@ a,a:hover {
     font-size: 20px;
     line-height: 22px;
     color: #222;
-    border-bottom: 2px solid #5BC0DE;
+    border-bottom: 2px solid #ef4135;
 }
 .separator span {
     font-family: "Roboto";
     font-size: 17px;
     line-height: 15px;
     font-weight: normal;
-    background-color: #5BC0DE;
+    background-color: #ef4135;
     display: inline-block;
     padding: 7px 12px 7px 12px;
     color: #fff;
@@ -159,27 +171,28 @@ a,a:hover {
     margin-bottom: -1px;    
 }
 .nav-tabs {
-  border-bottom: 2px solid #5BC0DE;
+  border-bottom: 2px solid #ef4135;
 }
 .navbar.navbar-inverse {
-  background-color: #01AAD6;
-  border-color: #01AAD6;
+  background-color: #333;
+  border-color: #333;
 }
 .navbar.navbar-inverse li a {
   color: #C8E3EA;
 }
+/*
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover{
-  background-color: #1592C1;
-}
+  background-color: #FFF;
+}*/
 /* active tab color */
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
   color: #fff;
-  background-color: #5BC0DE;
-  border: 2px solid #5BC0DE;
+  background-color: #ef4135;
+  border: 2px solid #ef4135;
 }
 /* hover tab color */
 .nav-tabs>li>a:hover {
-  border-color: #5BC0DE;
+  border-color: #ef4135;
   background-color: #111111;
 }
 /* nav dropdown text color */
@@ -241,6 +254,7 @@ a,a:hover {
 .label-info {
   border-radius: .15em;
   font-weight: normal;
+  background-color: #ef4135;
 }
 .price { /* price 颜色*/
   color: red;

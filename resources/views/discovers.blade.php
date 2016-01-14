@@ -1,5 +1,5 @@
-@include('include.header')
-
+@extends('layout/common')
+@section('content')
 <div class="container">
     <div class="row">
         <ul class="nav nav-tabs">
@@ -17,7 +17,9 @@
 		</div>
 	</div>
 </div>
+@endsection
 
+@section('script')
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
 $(window).on('hashchange', function() {
@@ -48,5 +50,4 @@ $(window).on('hashchange', function() {
         });
     }
 </script>
-
-@include('include.footer')
+@endsection

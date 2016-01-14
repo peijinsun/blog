@@ -51,9 +51,9 @@
 				</ul>
 				<ul class="list-inline content-btn">
 					<li>
-						<button class="btn btn-default worth-btn">值 {{ $discount['worth-count'] }}</button>
+						<button class="btn btn-default worth-btn worth" data-value ="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}">值 <span class="worth-count">{{ $discount['worths'] }}</span></button>
 					</li>
-					<li><a href="#"><i class="fa fa-commenting-o fa-lg"></i> {{ $discount['cmt-count'] }} </a></li>
+					<li><a href="./worthtest"><i class="fa fa-commenting-o fa-lg"></i> {{ $discount['cmt-count'] }} </a></li>
 				</ul>
 			</div>
 		</div>

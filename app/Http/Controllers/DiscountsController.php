@@ -16,17 +16,14 @@ class DiscountsController extends Controller
      * @return \Illuminate\Http\Response
      */
     protected $recomends;
-    protected $domestics;
-    protected $foreigns;
+    protected $populars;
     public function __construct() 
     {
         // Fetch the Site Settings object
         $this->recomends = Discounts::where('is-rec', '=', '1')->orderBy('time', 'desc')->take(4)->get()->toArray();
-        $this->domestics = Discounts::where('type', '=', '0')->orderBy('time', 'desc')->take(4)->get()->toArray();
-        $this->foreigns = Discounts::where('type', '=', '1')->orderBy('time', 'desc')->take(4)->get()->toArray();
+        $this->populars = Discounts::orderBy('clicks', 'desc')->take(4)->get()->toArray();
         \View::share('recomends', $this->recomends);
-        \View::share('domestics', $this->domestics);
-        \View::share('foreigns', $this->foreigns);
+        \View::share('populars', $this->populars);
     }
     public function index()
     {
@@ -35,13 +32,27 @@ class DiscountsController extends Controller
         if (Request::ajax()) {
             return \Response::json(\View::make('discounts.list', array('discounts' => $discounts))->render());
         }
-        return view('index',['discounts' => $discounts,]);
+        return view('home',['discounts' => $discounts,]);
     }
 
     public function article() {
         $id = Request::input('id');
-        $details = Discounts::find($id)->toArray();
+        $article = Discounts::find($id);
+        $article->clicks ++;
+        $article->save();
+        $details = $article->toArray();
         return view('article', ['details' => $details]);
+    }
+
+    public function worth(Request $request) {
+        if (Request::ajax()) {
+            $id = Request::input('postId');
+            $value = Request::input('value');
+            $vote = Discounts::where('id', '=', $id)->first();
+            $vote->update(['worths' => $value]);
+            return response()->json(['status' => 'success',
+            'msg' => 'Vote has been added.']);
+        }
     }
 
     public function discount_list() {
@@ -57,10 +68,19 @@ class DiscountsController extends Controller
     }
 
     public function recommend() {
-         $discounts = Discounts::where('is-rec', '=', '1')->orderBy('time', 'desc')->paginate(5);
+         $discounts = Discounts::where('is-rec', '=', '1')->orderBy('time', 'desc')->paginate(10);
         if (Request::ajax()) {
             return \Response::json(\View::make('discounts.rec_list', array('discounts' => $discounts))->render());
         }
-        return view('recs',['discounts' => $discounts]);
+        return view('recommends',['discounts' => $discounts]);
+    }
+
+    public function search() {
+        $keyword = Request::input('keyword');
+        $discounts = Discounts::where('title', 'LIKE', '%'.$keyword.'%')->orderBy('clicks', 'desc')->paginate(10);
+        if (Request::ajax()) {
+            return \Response::json(\View::make('discounts.rec_list', array('discounts' => $discounts))->render());
+        }
+        return view('recommends',['discounts' => $discounts]);
     }
 }

@@ -1,19 +1,20 @@
-@include('include.header')
+@extends('layout/common')
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 content-wrapper">
-			<div class="posts">
-				@include('discounts.rec_list')
-			</div>
-		</div>
-		<div class="col-md-4">
-			@include('include.sidebar')
-		</div>
-	</div>
-</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 content-wrapper">
+                <div class="posts">
+                    @include('discounts.rec_list')
+                </div>
+            </div>
+            <div class="col-md-4">
+                @include('layout.sidebar')
+            </div>
+        </div>
+    </div>
+@endsection
+@section('scripts')
 <script>
     $(document).ready(function() {
         $(document).on('click', '.pagination a', function (e) {
@@ -34,5 +35,4 @@
         });
     }
 </script>
-
-@include('include.footer')
+@endsection

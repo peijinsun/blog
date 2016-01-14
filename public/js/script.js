@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 $("button.worth-btn")
     .on("mouseover", function() {
-        $(this).css({"background-color":"#5BC0DE", "color":"white"});
+        $(this).css({"background-color":"#ef4135", "color":"white"});
     })
     .on("mouseleave", function() {
         if (!$(this).hasClass("liked")) {
@@ -32,7 +32,7 @@ $("button.worth-btn")
     });
 $("button.worth-btn").on("click", function() {
         $(this).addClass("liked");
-        $(this).css("background-color", "#5BC0DE");
+        $(this).css("background-color", "#ef4135");
     });
 $('ul.main-nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).slideDown();
@@ -46,7 +46,7 @@ $('.nav-tabs > li > a').hover( function(){
 
 $(".cheap-item")
 .on("mouseover", function() {
-    $(this).css({"border-color":"#5BC0DE", "box-shadow":"0 0 5px"});
+    $(this).css({"border-color":"#ef4135", "box-shadow":"0 0 5px"});
 })
 .on("mouseleave", function() {
     $(this).css({"border-color":"", "box-shadow":""});
@@ -54,7 +54,7 @@ $(".cheap-item")
 
 $(".discover-item")
 .on("mouseover", function() {
-    $(this).css({"border-color":"#5BC0DE", "box-shadow":"0 0 3px"});
+    $(this).css({"border-color":"#ef4135", "box-shadow":"0 0 3px"});
 })
 .on("mouseleave", function() {
     $(this).css({"border-color":"", "box-shadow":""});

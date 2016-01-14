@@ -14,7 +14,14 @@
                 <div class="row">
                     <div class="col-lg-12">时间：{{$details['time']}}</div>
                     <div class="col-lg-12">商城：{{$details['source']}}</div>
-                    <div class="col-lg-12"><a href="{{$details['url']}}" target="_blank"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></div>
+                    <div class="col-lg-12">
+                        <ul class="list-inline">
+                            <li><a  href="{{$details['url']}}" target="_blank"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></li>
+                            <li><button class="btn btn-default worth-btn worth" data-value ="{{ $details['worths'] }}" data-post-id="{{ $details['id'] }}">值 <span class="worth-count">{{ $details['worths'] }}</span></button></li>
+                        </ul>
+                        
+                        
+                    </div>
                 </div>
             </div>
         </div>

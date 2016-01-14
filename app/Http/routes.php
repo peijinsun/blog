@@ -24,3 +24,7 @@ Route::get('/rec', "DiscountsController@recommend");
 Route::get('/discover', "DiscoverController@index");
 
 Route::get('/deals', "CheapsController@index");
+
+//Route::resource('worth', 'WorthsController');
+Route::get('worth', 'DiscountsController@worth');
+Route::post('search', 'DiscountsController@search');

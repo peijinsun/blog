@@ -1,9 +1,13 @@
-<div class="row" style="padding-top: 20px;">
+<div class="row">
 	<div class="col-lg-12">
 		<ul class="nav nav-tabs">
 			<li class="active">
 				<a data-toggle="tab" href="#pdt-type">
+					@if (Request::is('rec'))
 					每日精选
+					@elseif (Request::is('search'))
+					搜索结果
+					@endif
 				</a>
 			</li>
 		</ul>
@@ -44,7 +48,7 @@
 				</ul>
 				<ul class="list-inline content-btn">
 					<li>
-						<button class="btn btn-default worth-btn">值 {{ $discount['worth-count'] }}</button>
+						<button class="btn btn-default worth-btn worth" data-value ="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}">值 <span class="worth-count">{{ $discount['worths'] }}</span></button>
 					</li>
 					<li><a href="#"><i class="fa fa-commenting-o fa-lg"></i> {{ $discount['cmt-count'] }} </a></li>
 				</ul>

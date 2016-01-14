@@ -1,5 +1,5 @@
-@include('include.header')
-
+@extends('layout/common')
+@section('content')
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 content-wrapper">
@@ -8,11 +8,13 @@
 			</div>
 		</div>
 		<div class="col-md-4">
-			@include('include.sidebar')
+			@include('layout.sidebar')
 		</div>
 	</div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+@endsection
+
+@section('script')
 <script>
 $(window).on('hashchange', function() {
         if (window.location.hash) {
@@ -42,4 +44,4 @@ $(window).on('hashchange', function() {
         });
     }
 </script>
-@include('include.footer')
+@endsection

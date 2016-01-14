@@ -1,20 +1,22 @@
-@include('include.header')
+@extends('layout/common')
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-8 content-wrapper">
-			@include('include.carousel-banner')
-			<div class="posts">
-				@include('discounts.list')
-			</div>
-		</div>
-		<div class="col-md-4">
-			@include('include.sidebar')
-		</div>
-	</div>
-</div>
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 content-wrapper">
+                @include('layout.carousel-banner')
+                <div class="posts">
+                    @include('discounts.list')
+                </div>
+            </div>
+            <div class="col-md-4">
+                @include('layout.sidebar')
+            </div>
+        </div>
+    </div>
+@endsection
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+@section('scripts')
 <script>
 $(window).on('hashchange', function() {
         if (window.location.hash) {
@@ -44,5 +46,4 @@ $(window).on('hashchange', function() {
         });
     }
 </script>
-
-@include('include.footer')
+@endsection

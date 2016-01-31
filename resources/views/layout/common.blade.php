@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -39,12 +39,14 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav main-nav">
                         <li class="dropdown {{ Request::is('/') ? 'active' : '' }}">
-                            <a href="index" onclick="location.href='index';" class="dropdown-toggle" data-toggle="dropdown" >首页 <b class="caret"></b></a>
-                            <ul class="dropdown-menu shouye">
+                            <a href="index" onclick="location.href='index';" class="dropdown-toggle" data-toggle="dropdown" >首页
+                            <!--<b class="caret"></b>-->
+                            </a>
+                           <!-- <ul class="dropdown-menu shouye">
                                 <li><a href="./list?type=0">国内优惠</a></li>
                                 <li class="divider"></li>
                                 <li><a href="./list?type=1">海淘优惠</a></li>
-                            </ul>
+                            </ul>-->
                         </li>
                         <li class = "{{ Request::is('rec') ? 'active' : '' }}">
                             <a href="./rec">每日精选</a>

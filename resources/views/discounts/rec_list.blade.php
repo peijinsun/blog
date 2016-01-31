@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-lg-12">
 		<ul class="nav nav-tabs">
-			<li class="active">
+			<li class="active highlight">
 				<a data-toggle="tab" href="#pdt-type">
 					@if (Request::is('rec'))
 					每日精选
@@ -13,6 +13,12 @@
 		</ul>
 	</div>
 </div>
+
+@if (Request::is('search'))
+	<div class="row search-list">
+		<div class="search-title">以下为<span class="keyword">“关键字”</span>全网搜索折扣信息</div>
+	</div>
+@endif
 <!-- Post -->
 @foreach ( $discounts as $discount )
 <div class="row post-list">    
@@ -41,16 +47,16 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12">
-				<ul class="pull-right list-inline content-link">
+			<div class="col-xs-12 bottom-btns-links">
+				<ul class="pull-right list-inline content-link sourceInfo">
 					<li>{{ $discount['source'] }}</li>
 					<li><a href="{{ $discount['url'] }}" target="_blank"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></li>
 				</ul>
 				<ul class="list-inline content-btn">
-					<li>
-						<button class="btn btn-default worth-btn worth" data-value ="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}">值 <span class="worth-count">{{ $discount['worths'] }}</span></button>
+					<li class="click-count-list">
+						<a href="javascript:void(0)" title="点击数" class="click-count-wrap"><i class="click-icon"></i><span class="click-count">{{ $discount['worths'] }}</span></a>
 					</li>
-					<li><a href="#"><i class="fa fa-commenting-o fa-lg"></i> {{ $discount['cmt-count'] }} </a></li>
+					<li class="comment-count-list"><a href="./worthtest" title=""评论 class="comment-count-wrap"><i class="comment-icon"></i> <span class="comment-count" >{{ $discount['cmt-count'] }}</span> </a></li>
 				</ul>
 			</div>
 		</div>

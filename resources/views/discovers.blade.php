@@ -1,10 +1,10 @@
-@extends('layout/common')
+﻿@extends('layout/common')
 @section('content')
 <div class="container">
     <div class="row">
-        <ul class="nav nav-tabs">
+        <!--<ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#pdt-type">发现</a></li>
-        </ul>
+        </ul>-->
     </div>
 	<div class="row">
 		<div class="col-md-12">

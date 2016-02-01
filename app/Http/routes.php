@@ -15,6 +15,10 @@ Route::get('/', "DiscountsController@index");
 
 Route::get('/index', "DiscountsController@index");
 
+Route::get('/domestic', "DiscountsController@dome");
+
+Route::get('/foreign', "DiscountsController@frgn");
+
 Route::get('/article', "DiscountsController@article");
 
 Route::get('/list', "DiscountsController@discount_list");
@@ -25,6 +29,5 @@ Route::get('/discover', "DiscoverController@index");
 
 Route::get('/deals', "CheapsController@index");
 
-//Route::resource('worth', 'WorthsController');
 Route::get('worth', 'DiscountsController@worth');
 Route::post('search', 'DiscountsController@search');

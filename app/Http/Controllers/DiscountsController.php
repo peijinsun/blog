@@ -35,6 +35,22 @@ class DiscountsController extends Controller
         return view('home',['discounts' => $discounts,]);
     }
 
+    public function dome() {
+        $discounts = Discounts::where('type', '=', '0')->orderBy('time', 'desc')->paginate(10);
+        if (Request::ajax()) {
+            return \Response::json(\View::make('discounts.list', array('discounts' => $discounts))->render());
+        }
+        return view('home',['discounts' => $discounts]);
+    }
+
+    public function frgn() {
+        $discounts = Discounts::where('type', '=', '1')->orderBy('time', 'desc')->paginate(10);
+        if (Request::ajax()) {
+            return \Response::json(\View::make('discounts.list', array('discounts' => $discounts))->render());
+        }
+        return view('home',['discounts' => $discounts]);
+    }
+
     public function article() {
         $id = Request::input('id');
         $article = Discounts::find($id);
@@ -63,7 +79,7 @@ class DiscountsController extends Controller
             if (Request::ajax()) {
                 return \Response::json(\View::make('discounts.list', array('discounts' => $discounts, 'type' => $type))->render());
             }
-            return view('types',['discounts' => $discounts, 'type' => $type]);
+            return view('home',['discounts' => $discounts, 'type' => $type]);
         }
     }
 

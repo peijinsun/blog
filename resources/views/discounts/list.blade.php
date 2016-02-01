@@ -1,37 +1,4 @@
-﻿<div class="row" style="padding-top: 20px;">
-    <div class="col-lg-12">
-        <ul class="nav-table-show nav nav-tabs multi-tabs">
-            <li class="selected">
-
-                <a id="allInfo" class="aFoucs" data-toggle="tab"  href="#pdt-type">
-                    @if (isset($rec))
-                    每日精选
-
-                    @elseif ( !isset($type) )
-                    所有信息
-                    @elseif ($type == 0)
-
-                    国内优惠
-                    @elseif ($type == 1)
-                    海淘优惠
-
-                    @endif
-                </a>
-            </li>
-            <li class="">
-                <a data-toggle="tab"  class="aFoucs" href="#pdt-type">
-                    国内优惠
-                </a>
-            </li>
-            <li class="">
-                <a data-toggle="tab"  class="aFoucs" href="#pdt-type">
-                    海淘优惠
-                </a>
-            </li>
-			<li class="hr"></li>
-        </ul>
-    </div>
-</div>
+﻿
 <!-- Post -->
 @foreach ( $discounts as
 $discount )
@@ -81,11 +48,12 @@ $discount['url'] }}" target="_blank"><h3><span class="buyNow label label-info re
                 <ul class="list-inline content-btn">
                     <li>
                    <!--     <button class="btn btn-default worth btn worth" data-value="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}">-->
-                     <a href="javascript:void(0);" title="点赞数" class="click-count-wrap"  data-value="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}" id="dzBtn" title="赞"><i class="click-icon"></i><span class="worth-count click-count">{{ $discount['worths'] }}</a></span>
+                     <a href="javascript:void(0);" title="点赞数" class="click-count-wrap"  data-value="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}" id="dzBtn" title="赞"><i class="click-icon"></i><span class="worth-count click-count">{{ $discount['clicks'] }}</a></span>
                       <!--  </button>-->
 
                     </li>
-                    <li><a  id="plBtn" class="comment-count-wrap"  href="./worthtest" title="评论"><i class="comment-icon"></i><span class="comment-count">{{ $discount['cmt-count'] }}</span></a></li>
+                    <!--
+                    <li><a  id="plBtn" class="comment-count-wrap"  href="./worthtest" title="评论"><i class="comment-icon"></i><span class="comment-count">{{ $discount['cmt-count'] }}</span></a></li>-->
                 </ul>
             </div>
         </div>

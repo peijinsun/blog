@@ -48,7 +48,7 @@ $discount['url'] }}" target="_blank"><h3><span class="buyNow label label-info re
                 <ul class="list-inline content-btn">
                     <li>
                    <!--     <button class="btn btn-default worth btn worth" data-value="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}">-->
-                     <a href="javascript:void(0);" title="点赞数" class="click-count-wrap"  data-value="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}" id="dzBtn" title="赞"><i class="click-icon"></i><span class="worth-count click-count">{{ $discount['clicks'] }}</a></span>
+                     <a href="javascript:void(0);" title="点击数" class="click-count-wrap"  data-value="{{ $discount['worths'] }}" data-post-id="{{ $discount['id'] }}" id="dzBtn" title="赞"><i class="click-icon"></i><span class="worth-count click-count">{{ $discount['clicks'] }}</a></span>
                       <!--  </button>-->
 
                     </li>

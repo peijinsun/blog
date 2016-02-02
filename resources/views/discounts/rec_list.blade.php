@@ -54,9 +54,10 @@
 				</ul>
 				<ul class="list-inline content-btn">
 					<li class="click-count-list">
-						<a href="javascript:void(0)" title="点击数" class="click-count-wrap"><i class="click-icon"></i><span class="click-count">{{ $discount['worths'] }}</span></a>
+						<a href="javascript:void(0)" title="点击数" class="click-count-wrap"><i class="click-icon"></i><span class="click-count">{{ $discount['clicks'] }}</span></a>
 					</li>
-					<li class="comment-count-list"><a href="./worthtest" title=""评论 class="comment-count-wrap"><i class="comment-icon"></i> <span class="comment-count" >{{ $discount['cmt-count'] }}</span> </a></li>
+					<!--
+					<li class="comment-count-list"><a href="./worthtest" title=""评论 class="comment-count-wrap"><i class="comment-icon"></i> <span class="comment-count" >{{ $discount['cmt-count'] }}</span> </a></li>-->
 				</ul>
 			</div>
 		</div>

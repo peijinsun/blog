@@ -73,8 +73,22 @@ $(".discover-item")
         $(this).css({"border-color": "", "box-shadow": ""});
     });
 
-$(".cheap-intro").each(function () {
-    var maxwidth = 80;
+$(".post-content").each(function () {
+    var maxwidth = 120;
+    if ($(this).text().length > maxwidth) {
+        $(this).text($(this).text().substring(0, maxwidth));
+        $(this).html($(this).html() + '...');
+    }
+});
+$(".cheap-title").each(function () {
+    var maxwidth = 28;
+    if ($(this).text().length > maxwidth) {
+        $(this).text($(this).text().substring(0, maxwidth));
+        $(this).html($(this).html() + '...');
+    }
+});
+$(".cheap-price").each(function () {
+    var maxwidth = 12;
     if ($(this).text().length > maxwidth) {
         $(this).text($(this).text().substring(0, maxwidth));
         $(this).html($(this).html() + '...');

@@ -29,10 +29,6 @@
 <div class="row">
     <div class="item-box col-sm-12">
         <div class="subtitle-box">优惠活动</div>
-        <p class="content">{{$details['deals']}}</p>
-    </div>
-    <div class="item-box col-sm-12">
-        <div class="subtitle-box">商品介绍</div>
         <div class="content">{{$details['content']}}</div>
     </div>
 </div>

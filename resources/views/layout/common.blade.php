@@ -54,9 +54,11 @@
                         <li class = "{{ Request::is('deals') ? 'active' : '' }}">
                             <a href="./deals">白菜价</a>
                         </li>
+                        <!--
                         <li class = "{{ Request::is('discover') ? 'active' : '' }}">
                             <a href="./discover">发现</a>
                         </li>
+                        -->
                     </ul>
                     <form class="navbar-form navbar-right navbar-searchform" role="search" action="search" method="post">
                         <div class="input-group">
@@ -86,49 +88,8 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/jquery.upvote.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script>
-        // CSRF token setup for jQuery
-        var csrf_token = $('meta[name="csrf-token"]').attr('content');
-        $.ajaxPrefilter(function(options, originalOptions, jqXHR){
-            switch (options['type'].toLowerCase()) {
-                case "post":
-                case "delete":
-                case "put":
-                    // add leading ampersand if `data` is non-empty
-                    if (options.data != '') {
-                        options.data += '&';
-                    }
-                    // add _token entry
-                    options.data += "_token=" + csrf_token;
-                    break;
-            }
-        });
-
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-
-
-        $('.worth-btn').upvote();
-
-        $('.worth').on('click', function (e) {
-            e.preventDefault();
-            var $button = $(this);
-            var postId = $button.data('post-id');
-            var value = $button.data('value');
-            value ++;
-            $(this).find('span').text(value);
-            $.get('worth', {postId:postId, value:value}, function(data) {
-                // success here
-            }).fail(function() {
-                alert("Something went wrong...");
-            }, 'json');
-        });
-    </script>
+    <script type='text/javascript' src='js/jquery.noreferrer.js'></script>
+    
     @yield('scripts')
 
     </body>

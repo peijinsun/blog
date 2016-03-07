@@ -13,7 +13,7 @@
                         <img class="img-responsive cheaps" src="{{$cheap['img']}}" alt="">
                     </a>
                 </div>
-                <div class="col-lg-12 "><h4><a href="#" class="cheap-title">{{$cheap['title']}}</a></h4></div>
+                <div class="col-lg-12 "><h4><span class="cheap-title">{{$cheap['title']}}</span></h4></div>
                 <div class="col-lg-12 cheap-price">{{$cheap['price']}}</div>
                 <div class="bcBuyNow col-lg-12 text-center"><a href="{{ $cheap['url'] }}" target="_blank"><h3><span class="label label-info redirect-btn">立即购买</span></h3></a></div>
             </div>

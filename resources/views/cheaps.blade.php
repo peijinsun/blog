@@ -16,6 +16,30 @@
 
 @section('script')
 <script>
+$(".cheap-intro").each(function () {
+    var maxwidth = 80;
+    if ($(this).text().length > maxwidth) {
+        $(this).text($(this).text().substring(0, maxwidth));
+        $(this).html($(this).html() + '...');
+    }
+    ;
+});
+$(".cheap-title").each(function () {
+    var maxwidth = 5;
+    if ($(this).text().length > maxwidth) {
+        $(this).text($(this).text().substring(0, maxwidth));
+        $(this).html($(this).html() + '...');
+    }
+    ;
+});
+$(".cheap-price").each(function () {
+    var maxwidth = 10;
+    if ($(this).text().length > maxwidth) {
+        $(this).text($(this).text().substring(0, maxwidth));
+        $(this).html($(this).html() + '...');
+    }
+    ;
+});
 $(window).on('hashchange', function() {
         if (window.location.hash) {
             var page = window.location.hash.replace('#', '');
